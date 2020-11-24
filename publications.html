@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Publications
-subtitle: We publish at Visualization, Machine Learning, and Data Science conferences.
+subtitle: We publish at premier venues in Human-Computer Interaction, such as ACM CHI or ACM UIST.
 ---
 
-<div id="facets" class="dn flex flex-row flex-wrap">
+<!-- <div id="facets" class="dn flex flex-row flex-wrap">
   <div class="facet mr3" id="venue_tags">
     <strong>Venue</strong>
     <ul class="list pl0"></ul>
@@ -36,12 +36,19 @@ subtitle: We publish at Visualization, Machine Learning, and Data Science confer
 <p id="clear-filters" class="dn b pointer">
   <i class="fas fa-times-circle cmu-red" aria-hidden="true"></i> Clear all filters. <span id="count_hidden">X</span> of
   <span id="count_total">X</span> publications are hidden by the filters.
-</p>
+</p> -->
+
+  <p >
+    We publish at premier venues in Human-Computer Interaction, such as ACM CHI or ACM UIST.
+  </p>
+
 
 <article>
-  {% assign pubyears = site.publications | group_by:"year" %} {% assign
-  sorted_pubyears = pubyears | reverse %} {% for year in sorted_pubyears %}
+  {% assign pubyears = site.publications | group_by:"year" %} 
+  {% assign sorted_pubyears = pubyears | reverse %} 
+  {% for year in sorted_pubyears %}
   <h2 class="year f2" id="y{{ year.name }}" class="year">{{ year.name }}</h2>
+
   {% for pub in year.items %}
   {% capture anchor %}{% if pub.id %}{{ pub.id }}{% else %}{{ pub.title | slugify }}{% endif %}{% endcapture %}
 
@@ -104,50 +111,59 @@ subtitle: We publish at Visualization, Machine Learning, and Data Science confer
           <i class="far fa-file-pdf f6" aria-hidden="true"></i> PDF
         </a>
         {% endif %}
+
         {% if pub.link %}
         <a href="{{ pub.link }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-link f6" aria-hidden="true"></i> Project
         </a>
         {% endif %}
+
         {% if pub.blog %}
         <a href="{{ pub.blog }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-newspaper f6" aria-hidden="true"></i> Article
         </a>
         {% endif %}
+
         {% if pub.video %}
         <a href="{{ pub.video }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-film f6" aria-hidden="true"></i> Video
         </a>
         {% endif %}
+
         {% if pub.recording %}
         <a href="{{ pub.recording }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-video f6" aria-hidden="true"></i> Recording
         </a>
         {% endif %}
+
         {% if pub.slides %}
         <a href="{{ pub.slides }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-window-maximize f6" aria-hidden="true"></i> Slides
         </a>
         {% endif %}
-        {% if pub.doi %}
-        <a href="https://www.doi2bib.org/bib/{{ pub.doi }}" class="black link hover-cmu-red mr3 dib">
-          <i class="fas fa-book f6" aria-hidden="true"></i> Bibtex
-        </a>
-        {% elsif pub.arxiv %}
-        <a href="https://arxiv2bibtex.org/?q={{ pub.arxiv | cgi_escape }}" class="black link hover-cmu-red mr3 dib">
-          <i class="fas fa-book f6" aria-hidden="true"></i> Bibtex
-        </a>
+
+        {% if pub.bibtex %}
+        <label for="slide_{{ pub.title | slugify }}" class="accordion__item-label db pv3 link black hover-cmu-red  mr3 dib"> Bibtex</label>
+        <div class="accordion__item">
+          <input type="checkbox" class="dn" name="slides" id="slide_{{ pub.title | slugify }}">
+          <div class="accordion__content bb b--black-20">
+            <pre>{{ pub.bibtex}}</pre>
+          </div>
+        </div>
         {% endif %}
+
         {% if pub.short_doi %}
         <a href="http://doi.org/{{ pub.short_doi }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-anchor f6" aria-hidden="true"></i> DOI: {{ pub.short_doi }}
         </a>
         {% endif %}
+
         {% if pub.arxiv %}
         <a href="https://arxiv.org/abs/{{ pub.arxiv }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-archive f6" aria-hidden="true"></i> arXiv: {{ pub.arxiv }}
         </a>
         {% endif %}
+
         {% if pub.osf %}
         <a href="https://osf.io/{{ pub.osf }}" class="black link hover-cmu-red mr3 dib">
           <i class="fas fa-archive f6" aria-hidden="true"></i> OSF: {{ pub.osf }}
@@ -159,7 +175,19 @@ subtitle: We publish at Visualization, Machine Learning, and Data Science confer
   {% endfor %} {% endfor %}
 </article>
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 <script>
   {% include itemsjs.min.js %}
   {% include pubfilter.js %}
+</script>
+
+<script>
+  //From https://codepen.io/Anotherdago/pen/yjVxOB
+  //Add basic styles for active tabs
+    $('.accordion__item-label').on('click', function() {
+      $(this).addClass('blue');
+      $(this).parent('.accordion__item').siblings().find('.accordion__item-label').removeClass('blue');
+    });
 </script>

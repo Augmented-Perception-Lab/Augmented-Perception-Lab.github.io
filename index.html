@@ -2,35 +2,73 @@
 layout: default
 ---
 
-<div class="jumbotron">
-  <div class="w-100 mw8 ph4-l ph3 pv5-l pv3 center">
-    <h1 class="f1 lh-title measure mt3">CMU Data Interaction Group</h1>
-    <p class="f4 measure lh-copy">
-      We are a research group at the
-      <a href="https://www.hcii.cmu.edu/"
-        >Human-Computer Interaction Institute</a
-      >
-      at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>. Our
-      mission is to empower everyone to analyze and communicate data with
-      interactive systems.
-    </p>
-    <h3>
-      <a class="cta" href="{{ '/about' | relative_url }}"
-        >Learn more about our group</a
-      >
-    </h3>
-  </div>
-</div>
 
 <section class="w-100 mw8 ph4-l ph3 center">
-  <div class="pv3">
-    <h2 class="f2">Research Areas</h2>
 
-    <p class="f4 measure-wide lh-copy">
-      Our group conducts research in computer science at the intersection of
-      human-computer interaction, machine learning, data science, programming
-      languages, and data management.
+  <!-- <div class="flex flex-row-ns flex-column pv3"> 
+
+    <div class="pr3 w-two-thirds-l w-50-m">
+      <h2 class="f2">Research</h2>
+
+      <p class="f4 measure-wide lh-copy">
+        Our group focusses on understanding how humans perceive and interact with digital information, 
+        and to build technology that goes beyond the flat displays of PCs and smartphones to advances 
+        our capabilities when interacting with the digital world. To achieve this, we create and study 
+        enabling technologies and computational approaches that control when, where and how virtual 
+        content is displayed to increase the usability of AR and VR interfaces.
+      </p>
+    </div>
+
+    <div class="pr3-ns w-thirds-l w-50-m">
+      <h2 class="f3">Updates</h2>
+
+      <ul class="list pl0">
+        {% assign sorted_posts = site.news %} {% for post in
+        sorted_posts limit:3%}
+        <li class="pb3">
+          {{ post.title }}
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date }}" class="db f6 black-80"
+            >{{ post.date | date: "%b %Y" }}</time
+          >
+        </li>
+        {% endfor %}
+      </ul>
+      <a class="cta" href="/news">Show all</a>
+    </div>
+
+    <div class="pl3-ns w-third-l w-50-m">
+      <h2 class="f3">Courses</h2>
+
+      <ul class="list pl0">
+        {% assign years = site.courses | group_by: 'year' %}{% assign
+        sorted_years = years | reverse %}{% for year in sorted_years %} {%
+        assign sorted_courses = year.items | sort: 'semester' %} {% for course
+        in sorted_courses %}
+        <li class="pb3">
+          <a href="{{ course.url }}">{{ course.name }}</a>
+          <span class="db f6 black-80"
+            >{{ course.semester }} {{ course.year }}</span
+          >
+        </li>
+        {% endfor %} {% endfor %}
+      </ul>
+    </div>
+  </div> -->
+  
+  <div class="pv3">
+    <h2 class="f2">Research</h2>
+
+    <!-- <p class="f4 measure-wide lh-copy"> -->
+    <p class="f4 lh-copy">
+      Our group focusses on understanding how humans perceive and interact with digital information, 
+      and to build technology that goes beyond the flat displays of PCs and smartphones to advances 
+      our capabilities when interacting with the digital world. To achieve this, we create and study 
+      enabling technologies and computational approaches that control when, where and how virtual 
+      content is displayed to increase the usability of AR and VR interfaces.
     </p>
+
+    <!-- <h2 class="f3">Recent projects</h2>
 
     <div class="flex flex-row-ns flex-wrap pt3">
       <div class="mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
@@ -60,58 +98,65 @@ layout: default
           understandable.
         </p>
       </div>
-      <div class="ml2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
+      <div class="ml2-ns mv2 w-40-l w-40-m flex-auto shadow-4 pa3 br2">
         <h3 class="f4 mt0">Design for Machine Learning</h3>
         <p class="measure lh-copy">
           To create ML-based applications, we need to understand and design for
           everyone involved in the development process—the engineers who build
           the models, the designers who create the experiences, and the people
           who use the products.
-        </p>
+        </p>  
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="flex flex-row-ns flex-column pv3">
-    <div class="pr3 w-two-thirds-l w-50-m">
-      <h2 class="f3">Posts & Updates</h2>
+  <!-- <div class="jumbotron">
+    <div class="w-100 mw8 ph4-l ph3 pv3-l pv3 center">
+      <h1 class="f2 lh-title measure mt3">We are hiring!</h1>
+      <p class="f4 measure lh-copy">
+        We are hiring PhD, Master and undergrad students. <br/>
 
-      <ul class="list pl0">
-        {% assign sorted_posts = site.posts %} {% for post in
-        sorted_posts %}
-        <li class="pb3">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <time datetime="{{ post.date }}" class="db f6 black-80"
-            >{{ post.date | date: "%b %Y" }}</time
-          >
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
+        You can find more information <a href="{{ '/team' | relative_url }}" class="link b hover-cmu-red dim pv1 dib">on our teams page.</a>
+      </p> -->
+      <!-- <h3>
+        <a class="cta" href="{{ '/about' | relative_url }}"
+          >Learn more about our group</a
+        >
+      </h3> -->
+    <!-- </div>
+  </div> -->
+  
+  <!-- w-50-m -->
+  <div class="fl w-60 ph2 ba">
+    <h2 class="f3">We are hiring!</h2>
 
-    <div class="pl3-ns w-third-l w-50-m">
-      <h2 class="f3">Courses</h2>
-
-      <ul class="list pl0">
-        {% assign years = site.courses | group_by: 'year' %}{% assign
-        sorted_years = years | reverse %}{% for year in sorted_years %} {%
-        assign sorted_courses = year.items | sort: 'semester' %} {% for course
-        in sorted_courses %}
-        <li class="pb3">
-          <a href="{{ course.url }}">{{ course.name }}</a>
-          <span class="db f6 black-80"
-            >{{ course.semester }} {{ course.year }}</span
-          >
-        </li>
-        {% endfor %} {% endfor %}
-      </ul>
-    </div>
+    <p class="f4 measure-wide lh-copy">
+      We are hiring PhD, Master and undergrad students. <br/>
+      You can find more information <a href="{{ '/team' | relative_url }}" class="link b hover-cmu-red dim pv1 dib">on our teams page.</a>
+    </p>
   </div>
 
+  <div class="fl w-40 ph3 mb3">
+    <h2 class="f3">Updates</h2>
+    <ul class="list pl0">
+      {% assign sorted_posts = site.news %} {% for post in
+      sorted_posts limit:3%}
+      <li class="pb3">
+        {{ post.title }}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <time datetime="{{ post.date }}" class="db f6 black-80"
+          >{{ post.date | date: "%b %Y" }}</time
+        >
+      </li>
+      {% endfor %}
+    </ul>
+    <a class="cta" href="/news">Show all</a>
+  </div>
+  
   <div class="pv3">
     <h2 class="f3">Recent Publications</h2>
 
-    <a class="cta" href="/publications">Show all</a>
+    <!-- <a class="cta" href="/publications">Show all</a> -->
 
     <div class="mv3">
       {% assign recent_pubs = site.publications | reverse %} {% for pub in
@@ -128,10 +173,11 @@ layout: default
             <a href="{{ pub.url }}" class="b link black hover-cmu-red"
               >{{ pub.title }}</a
             >
+            <br />
             <span class="fw2">
               {% for author in pub.authors %}{% include person name=author %}{%
-              unless forloop.last %}, {% endunless %}{% endfor %}</span
-            >, <span class="nowrap">{{ pub.venue }} {{ pub.year }}</span>
+              unless forloop.last %}, {% endunless %}{% endfor %}.</span
+            > <span class="nowrap">{{ pub.venue }} {{ pub.year }}</span>
           </div>
           <a href="{{ pub.url }}" class="cta">Show details</a>
         </div>
@@ -141,4 +187,5 @@ layout: default
 
     <a class="cta" href="/publications">Show all</a>
   </div>
+  
 </section>

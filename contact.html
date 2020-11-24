@@ -1,0 +1,108 @@
+---
+layout: page
+title: About DIG
+subtitle: Learn more about the Data Interaction Group at Carnegie Mellon University.
+---
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6jnUbq3N8nNJhpP6UUMtgqBQpNxZSeEw&callback=initMap&libraries=&v=weekly"
+defer
+></script>
+<style type="text/css">
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+</style>
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of HCII 40.443316, -79.945889
+    const cmu_hcii = { lat: 40.443316, lng: -79.945889 };
+    // The map, centered at HCII
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: cmu_hcii,
+    });
+    // The marker, positioned at HCII
+    const marker = new google.maps.Marker({
+      position: cmu_hcii,
+      map: map,
+    });
+  }
+</script>
+
+<h2>Where to find us.</h2>
+
+<!-- <p class="measure-wide lh-copy">    
+</p> -->
+
+<p>
+  <br/>
+  <a href="{{ '/index' | relative_url }}" class="link black hover-cmu-red dim pv1 dib">Augmented Perception Lab</a>, 
+  <a href="https://hcii.cmu.edu" class="link black hover-cmu-red dim pv1 dib">Human-Computer Interaction Institute</a>,
+  <a href="https://www.cs.cmu.edu" class="link black hover-cmu-red dim pv1 dib">School of Computer Science</a>,
+  <a href="https://www.cmu.edu" class="link black hover-cmu-red dim pv1 dib">Carnegie Mellon University</a>
+  <br/>
+  <a href="https://www.google.com/maps/place/Newell-Simon+Hall/@40.443428,-79.9456134,15z/data=!4m2!3m1!1s0x0:0x9dc3e7773e241828?sa=X&ved=2ahUKEwiSiovV5IHtAhWRzaQKHYMqAd0Q_BIwCnoECBIQBQ"
+  class="link black hover-cmu-red dim pv1 dib">
+  Newell Simon Hall,  5000 Forbes Ave, Pittsburgh, PA 15213, United States</a>
+</p>
+<!-- <i class="fa fa-external-link"></i> -->
+
+<div id="map" ></div>
+
+<h2>Office</h2>
+
+<p class="measure-wide lh-copy">
+  Here is a description of David's office, and maybe office hours.
+</p>
+
+<h2>Lab space</h2>
+
+<p class="measure-wide lh-copy">
+  Here is a description of the lab space, maybe with some images.
+</p>
+<!-- 
+<p class="measure-wide lh-copy">
+  The DIG logo is the
+  <a href="https://athletics.cmu.edu/athletics/mascot/index"
+    >CMU macot Scotty</a
+  >
+  digging. Find out more in our
+  <a href="{% post_url 2020-02-08-logo %}">launch post</a>.
+</p>
+
+<h2>Our Values</h2>
+
+<p class="measure-wide lh-copy">
+  <strong>People matter.</strong> Teams are more successful when everybody is
+  happy. We are all human and strive for an inclusive environment. We care about
+  work-life balance. We celebrate successes and learn from failures.
+</p>
+
+<p class="measure-wide lh-copy">
+  <strong>Simple but not easy.</strong> We strive to find simple solutions and
+  principles to solve complex problem. Finding simple solutions doesn't mean
+  it's easy but it means that the end result is usable and clearly communicated.
+</p>
+
+<p class="measure-wide lh-copy">
+  <strong>Execution matters.</strong> There are a lot of good ideas but a good
+  idea only becomes a successful idea when it is well-executed and clearly
+  communicated. We care about meaningful impact.
+</p>
+
+<p class="measure-wide lh-copy">
+  <strong>Pragmatism over dogmatism.</strong> Break rules when you have to and
+  adjust your principles when it doesn't match reality.
+</p>
+
+<p class="measure-wide lh-copy">
+  <strong>We don't live in a bubble.</strong> Scientists can't be in a bubble.
+  We have to care about the societal, ecological, and economical impact of our
+  work. We have to help fight discrimination, climate change, and poverty.
+</p> -->

@@ -5,27 +5,27 @@
     <div class="content">
       <header class="bg-white">
         <div
-          class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"
+          class="headermenu w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"
         >
           <a href="/" class="dib f2 f3-ns fw6 link black hover-cmu-red">
-            CMU DIG
+            Augmented Perception Lab
             <picture>
-              <source
-                srcset="{{ '/assets/logo-light.svg' | relative_url }}"
-                type="image/svg+xml"
+              <source  
+                srcset="{{ '/assets/logo-sphere-01-01-01.svg' | relative_url }}"
+                type="image/svg+xml"              
               />
-              <source
+              <!-- <source
                 srcset="{{ '/assets/logo-light.webp' | relative_url }}"
                 type="image/webp"
-              />
-              <source
-                srcset="{{ '/assets/logo-light.png' | relative_url }}"
+              /> -->
+              <source  
+                srcset="{{ '/assets/logo-sphere-03-01.png' | relative_url }}"
                 type="image/png"
               />
-              <img
-                alt="The CMU mascot Scotty, who is a black dog, digging up dirt."
+              <img 
+                class="logo"
+                alt="A coarsely tesselated sphere colored in shades of gray."
                 class="pl2 w3"
-                style="margin-bottom: -1.3rem"
               />
             </picture>
           </a>
@@ -34,32 +34,29 @@
           >
             <div class="tc mt0-ns mt2">
               <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
-                href="{{ '/about' | relative_url }}"
-                >About</a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/' %}cmu-red{% endif %} "
+                href="{{ '/index' | relative_url }}"
+                >Home</a
               >
               <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/team.html' %}cmu-red{% endif %} "
                 href="{{ '/team' | relative_url }}"
                 >Team</a
               >
               <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/publications.html' %}cmu-red{% endif %} "
                 href="{{ '/publications' | relative_url }}"
-                >Publications</a
+                >Research</a
               >
-            </div>
-            <div class="tc">
+              <!-- <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/teaching.html' %}cmu-red{% endif %} "
+                href="{{ '/teaching' | relative_url }}"
+                >Teaching</a
+              > -->
               <a
-                class="ml5-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
-                href="https://github.com/cmudig"
-                ><i class="fab fa-github mr2"></i>GitHub</a
-              >
-              <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib"
-                href="https://twitter.com/cmudig"
-              >
-                <i class="fab fa-twitter mr2"></i>Twitter</a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/contact.html' %}cmu-red{% endif %} "
+                href="{{ '/contact' | relative_url }}"
+                >Contact</a
               >
             </div>
           </nav>
@@ -71,64 +68,26 @@
       </main>
     </div>
 
-    <footer class="bt bg-cmu-dark-gray white mt5 flex-shrink-0">
-      <div class="w-100 mw8 ph4-l ph3 center pv5">
-        <div class="flex flex-row-ns flex-column">
-          <div class="w-50-ns">
-            <div class="pv1">
-              Hello from Pittsburgh.
-              <a
-                href="{% post_url 2020-10-03-join-us %}"
-                class="link white dim underline"
-                >Come join us!</a
-              >
-            </div>
-            <div class="pv1">
-              <a
-                href="https://github.com/cmudig/cmudig.github.io/edit/master/{{
-                  page.path
-                }}"
-                class="link white dim"
-                >Edit this page</a
-              >
-            </div>
-            <div class="pv1">
-              We are
-              <a href="https://twitter.com/cmudig" class="link white dim"
-                >@cmudig</a
-              >
-              on Twitter.
-            </div>
-            <div class="pt4">
-              <abbr
-                title="Last build on {{ site.time | date: '%Y-%m-%d' }}"
-                class="white"
-                style="text-underline-position: under"
-                >{{ site.time | date: "%B %Y" }}</abbr
-              >
-            </div>
-          </div>
-          <div class="w-50-ns">
-            <h4 class="white mt0-ns">Links</h4>
-            <ul class="list pl0">
-              <li>
-                <a href="https://hcii.cmu.edu" class="link white dim pv1 dib"
-                  >Human-Computer Interaction Institute</a
-                >
-              </li>
-              <li>
-                <a href="https://www.cs.cmu.edu" class="link white dim pv1 dib"
-                  >School of Computer Science</a
-                >
-              </li>
-              <li>
-                <a href="https://www.cmu.edu" class="link white dim pv1 dib"
-                  >Carnegie Mellon University</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+    <footer class="bt white mt5 flex-shrink-0">
+      <div class="w-100 mw8 ph4-l ph3 center pv3 footerinfo">
+        <ul class="list pl0">
+          <li>
+            <a href="{{ '/index' | relative_url }}" class="link white dim pv1 dib">Augmented Perception Lab</a>, 
+            <a href="https://hcii.cmu.edu" class="link white dim pv1 dib">Human-Computer Interaction Institute</a>,
+            <a href="https://www.cs.cmu.edu" class="link white dim pv1 dib">School of Computer Science</a>,
+            <a href="https://www.cmu.edu" class="link white dim pv1 dib">Carnegie Mellon University</a>
+          </li>
+          <li>
+            Newell Simon Hall,  5000 Forbes Ave, Pittsburgh, PA 15213, United States, <a href="{{ '/contact' | relative_url }}" class="link white dim underline">How to find us.</a>             
+          </li>
+          <li class="pv1">
+            <abbr
+            title="Last build on {{ site.time | date: '%Y-%m-%d' }}"
+            class="white"
+            style="text-underline-position: under; list-style: height 2em;"
+            >Last update {{ site.time | date: "%B %Y" }}</abbr>              
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

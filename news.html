@@ -1,0 +1,23 @@
+---
+layout: page
+title: News
+subtitle: Archive of our news and updates
+---
+
+<div class="flex flex-row-ns flex-column pv3">
+  <div class="pr3 w-two-thirds-l w-50-m">
+    <h2 class="f3">Updates</h2>
+
+    <ul class="list pl0">
+      {% assign sorted_posts = site.news %} {% for post in
+      sorted_posts %}
+      <li class="pb3">
+        {{ post.title }}
+        <!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
+        <time datetime="{{ post.date }}" class="db f6 black-80"
+          >{{ post.date | date: "%b %Y" }}</time
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>

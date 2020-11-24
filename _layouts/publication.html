@@ -16,7 +16,7 @@ layout: default
       {% endif %}
 
       <div class="flex flex-row flex-wrap items-start mt1">
-      {% for name in page.authors %} {% assign author = site.people |
+      {% for name in page.authors limit:1%} {% assign author = site.people |
       where:"name", name | first %}
         <div class="flex flex-column items-center mt3 mr4">
           <picture>
@@ -71,7 +71,7 @@ layout: default
     {% assign page_content = content %}
     {% if page_content != "" %}
       <h2>Abstract</h2>
-      <div class="measure-wide lh-copy">
+      <div class="lh-copy">
         {{ page_content }}
       </div>
     {% endif %}
@@ -109,20 +109,7 @@ layout: default
             <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
           </a></li>
         {% endif %}
-        {% if page.doi %}
-          <li class="mt2"><a href="https://www.doi2bib.org/bib/{{ page.doi }}" class="black link hover-cmu-red">
-            <i class="fas fa-book" aria-hidden="true"></i> Bibtex
-          </a></li>
-        {% elsif page.arxiv %}
-          <li class="mt2"><a href="https://arxiv2bibtex.org/?q={{ page.arxiv | cgi_escape }}" class="black link hover-cmu-red">
-            <i class="fas fa-book" aria-hidden="true"></i> Bibtex
-          </a></li>
-        {% endif %}
-        {% if page.short_doi %}
-          <li class="mt2"><a href="http://doi.org/{{ page.short_doi }}" class="black link hover-cmu-red">
-            <i class="fas fa-anchor" aria-hidden="true"></i> DOI: {{ page.short_doi }}
-          </a></li>
-        {% endif %}
+
         {% if page.arxiv %}
           <li class="mt2"><a href="https://arxiv.org/abs/{{ page.arxiv }}" class="black link hover-cmu-red">
             <i class="fas fa-archive" aria-hidden="true"></i> arXiv: {{ page.arxiv }}
@@ -135,5 +122,13 @@ layout: default
         {% endif %}
       </ul>
     {% endif %}
+
+    {% if page.bibtex != "" %}
+      <h2>Bibtex</h2>
+      <div class="lh-copy">
+        <pre>{{ page.bibtex}}</pre>
+      </div>
+    {% endif %}
+    
   </div>
 </section>
