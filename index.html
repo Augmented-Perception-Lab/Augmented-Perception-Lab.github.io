@@ -56,18 +56,29 @@ layout: default
     </div>
   </div> -->
   
-  <div class="pv3">
-    <h2 class="f2">Research</h2>
+  <div class="w-100 mt2">
+      <img class="w-100" src="assets/teaser-01.jpg" alt="Teaser image">
+  </div>
+
+  <div class="w-100 mt2">
+    <h2 class="f3">Research</h2>
 
     <!-- <p class="f4 measure-wide lh-copy"> -->
-    <p class="f4 lh-copy">
-      Our group focusses on understanding how humans perceive and interact with digital information, 
-      and to build technology that goes beyond the flat displays of PCs and smartphones to advances 
-      our capabilities when interacting with the digital world. To achieve this, we create and study 
-      enabling technologies and computational approaches that control when, where and how virtual 
-      content is displayed to increase the usability of AR and VR interfaces.
-    </p>
+    <p class="f5 lh-copy">
+      Welcome to the <span class="b">Augmented Perception Lab</span> at the <a href="https://www.hcii.cmu.edu/" class="black b underline-dot hover-cmu-red link">Human-Computer Interaction Institute</a> at <a href="https://www.cmu.edu/" class="black b underline-dot hover-cmu-red link">Carnegie Mellon University</a> .
+      <br/><br/>
 
+      We focuss on understanding how <span class="b">perceive and interact with digital information,</span>  
+      and to build technology that goes beyond the flat displays of PCs and smartphones to advances 
+      our capabilities when interacting with the digital world. To achieve this, we <span class="b">create and study 
+      enabling technologies and computational approaches</span> that control when, where and how virtual 
+      content is displayed to increase the usability of <span class="b">Augmented Reality and Virtual Reality interfaces</span>.
+
+      <br/><br/>
+      The Augmented Perception lab is headed by <a href="" class="black b underline-dot hover-cmu-red link">Prof. David Lindlbauer</a>.
+      If you want to <a href="{{ '/team' | relative_url }}" class="black underline-dot hover-cmu-red link b" >work with us</a>, please check out our <a href="{{ '/team' | relative_url }}" class="black b underline-dot hover-cmu-red link" >Team page</a>.
+
+    </p>
     <!-- <h2 class="f3">Recent projects</h2>
 
     <div class="flex flex-row-ns flex-wrap pt3">
@@ -110,34 +121,9 @@ layout: default
     </div> -->
   </div>
 
-  <!-- <div class="jumbotron">
-    <div class="w-100 mw8 ph4-l ph3 pv3-l pv3 center">
-      <h1 class="f2 lh-title measure mt3">We are hiring!</h1>
-      <p class="f4 measure lh-copy">
-        We are hiring PhD, Master and undergrad students. <br/>
-
-        You can find more information <a href="{{ '/team' | relative_url }}" class="link b hover-cmu-red dim pv1 dib">on our teams page.</a>
-      </p> -->
-      <!-- <h3>
-        <a class="cta" href="{{ '/about' | relative_url }}"
-          >Learn more about our group</a
-        >
-      </h3> -->
-    <!-- </div>
-  </div> -->
-  
-  <!-- w-50-m -->
-  <div class="fl w-60 ph2 ba">
-    <h2 class="f3">We are hiring!</h2>
-
-    <p class="f4 measure-wide lh-copy">
-      We are hiring PhD, Master and undergrad students. <br/>
-      You can find more information <a href="{{ '/team' | relative_url }}" class="link b hover-cmu-red dim pv1 dib">on our teams page.</a>
-    </p>
-  </div>
-
-  <div class="fl w-40 ph3 mb3">
+  <!-- <div class="w-100 mt2">
     <h2 class="f3">Updates</h2>
+    <a class="cta" href="/news">Show all updates.</a>
     <ul class="list pl0">
       {% assign sorted_posts = site.news %} {% for post in
       sorted_posts limit:3%}
@@ -150,42 +136,67 @@ layout: default
       </li>
       {% endfor %}
     </ul>
-    <a class="cta" href="/news">Show all</a>
-  </div>
+  </div> -->
   
-  <div class="pv3">
-    <h2 class="f3">Recent Publications</h2>
-
-    <!-- <a class="cta" href="/publications">Show all</a> -->
+  <div class="mt2">
+    <h2 class="f3">Selected Publications</h2>
+    <a class="cta" href="/publications">Show all publications</a>
 
     <div class="mv3">
-      {% assign recent_pubs = site.publications | reverse %} {% for pub in
-      recent_pubs limit:5 %}
-      <div class="mt4 mt3-ns flex flex-row-ns flex-column">
+      {% assign selected_pubs = site.publications | where: "selected", true %} 
+      <!-- {{ recent_pubs | size }} -->
+
+      {% assign pubyears = selected_pubs | group_by:"year" %} 
+      {% assign sorted_pubyears = pubyears | reverse %}  
+
+      {% for year in sorted_pubyears %}
+      {% assign sorted_months = year.items | sort : 'month' | reverse %}  
+
+      {% for pub in sorted_months %}
+      <div class="mv4-ns flex flex-row-ns flex-column">
         {% assign thumb = 'assets' | append: pub.url | replace: '.html',
         '_thumb.png' %}
-        <div
+        
+        <!-- <div
           class="h3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
           style="background-image: url('{{ thumb | relative_url }}')"
-        ></div>
-        <div class="measure-wide">
-          <div class="mb1">
-            <a href="{{ pub.url }}" class="b link black hover-cmu-red"
-              >{{ pub.title }}</a
-            >
-            <br />
-            <span class="fw2">
-              {% for author in pub.authors %}{% include person name=author %}{%
-              unless forloop.last %}, {% endunless %}{% endfor %}.</span
-            > <span class="nowrap">{{ pub.venue }} {{ pub.year }}</span>
+        ></div> -->
+
+        <div class="h3 mv3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
+        style="background-image: url('{{ thumb | relative_url }}')">
+        
+          <iframe width="400" height="240" class="thumb-video" 
+            src="https://www.youtube.com/embed/{{ pub.video-thumb}}?iv_load_policy=3&modestbranding=1&rel=0&autohide=1&playsinline=1&controls=1&showinfo=0&autoplay=0&loop=0&mute=1" 
+            frameborder="0" allowfullscreen>
+          </iframe>   
+        </div>
+
+        <div class="measure-wide mv3 min-width-front">
+
+          <div class="mb2">
+          <h3 class="mt0">
+            <a href="{{ pub.url }}" class="b link black hover-cmu-red mb3"
+            >{{ pub.title }}</a></h3>
           </div>
-          <a href="{{ pub.url }}" class="cta">Show details</a>
+
+          <div class="mb2">
+            {% for author in pub.authors %}{{ author }}{%
+            unless forloop.last %}, {% endunless %}{% endfor %}.</div> 
+
+          <span class="b">{{ pub.venue }} {{ pub.year }}</span>
+
+          <div class="mt3">
+            <a href="{{ pub.url }}" class="cta">Show details</a>
+          </div>
+
         </div>
       </div>
       {% endfor %}
+      {% endfor %}
     </div>
 
-    <a class="cta" href="/publications">Show all</a>
+    <a class="cta" href="/publications">Show all publications</a>
+
   </div>
   
 </section>

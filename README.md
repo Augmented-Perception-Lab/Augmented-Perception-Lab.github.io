@@ -11,3 +11,9 @@ To add specific content, follow the README guides in the corresponding directori
 * [Add a person](_people)
 * [Add a publication](_publications)
 * [Add a post](_posts)
+
+
+Useful links for the theme:
+https://tachyons.io/#style
+https://tachyons.io/docs/layout/spacing/
+https://tachyons.io/docs/typography/line-height/

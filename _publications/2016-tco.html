@@ -1,0 +1,88 @@
+---
+layout: publication
+year: 2016
+month: 10
+selected: false
+link: https://dl.acm.org/doi/10.1145/2984511.2984556
+pdf: https://dl.acm.org/doi/10.1145/2984511.2984556
+title: "Changing the Appearance of Physical Interfaces Through Controlled Transparency"
+authors:
+  - David Lindlbauer
+  - Jörg Müller
+  - Marc Alexa
+blog: http://www.cg.tu-berlin.de/research/projects/transparency-controlled-physical-interfaces/
+doi: 10.1145/2984511.2984556
+venue_location: Tokyo, Japan
+venue_url: https://uist.acm.org/uist2016/
+venue_tags:
+  - UIST
+type:
+  - Conference
+tags:
+  - Science
+  - Mixed Reality
+venue: UIST
+
+video-thumb: DR6R-hSCuqQ
+video-30sec: DR6R-hSCuqQ
+video-suppl: f3e3SI-CKBM
+# video-talk-5min: ...
+video-talk-15min: ABvP_wpvMSI
+
+bibtex: "@inproceedings{Lindlbauer16a, \n
+author = {Lindlbauer, David and Mueller, Joerg and Alexa, Marc}, \n
+title = {Changing the Appearance of Physical Interfaces Through Controlled Transparency}, \n
+year = {2016}, \n
+isbn = {9781450341899}, \n
+publisher = {Association for Computing Machinery}, \n
+address = {New York, NY, USA}, \n
+url = {https://doi.org/10.1145/2984511.2984556}, \n
+doi = {10.1145/2984511.2984556}, \n
+booktitle = {Proceedings of the 29th Annual Symposium on User Interface Software and Technology}, \n
+pages = {425–435}, \n
+numpages = {11}, \n
+keywords = {transparency control, dynamic appearance}, \n
+location = {Tokyo, Japan}, \n
+series = {UIST '16} \n
+}"
+---
+<p>
+We present physical interfaces that change their appearance through controlled transparency. These transparency-controlled physical interfaces are well suited for applications where communication through optical appearance is sufficient, such as ambient display scenarios. They transition between perceived shapes within milliseconds, require no mechanically moving parts and consume little energy. We build 3D physical interfaces with individually controllable parts by laser cutting and folding a single sheet of transparency-controlled material. Electrical connections are engraved in the surface, eliminating the need for wiring individual parts. We consider our work as complementary to current shape-changing interfaces. While our proposed interfaces do not exhibit dynamic tangible qualities, they have unique benefits such as the ability to create apparent holes or nesting of objects. We explore the benefits of transparency-controlled physical interfaces by characterizing their design space and showcase four physical prototypes: two activity indicators, a playful avatar, and a lamp shade with dynamic appearance.
+</p>
+
+<p>
+<strong>Disclaimer</strong>: Software and hardware is provided as is. Feel free to use it, be we do not give any kind of warranty. Electrical schematics should be used with caution (i.e. use it at own risk). Do not try to build, wire or solder anything if you don’t feel confident in what you are doing. The software is most likely to contain bugs (known and unknown). Treat it more like a dictionary that should help you with your own implementation.
+</p>
+
+<p>
+<strong>Source code</strong><br/>
+The software is written in c++ (with Xcode, runs on OSX) with openFrameworks for GUI and algorithms. Below, you can download the software as zip, bundled with openFramework 0.9. It should run pretty much out of the box. We might put it on GitHub in the future. This would, however, require a major cleanup and refactoring first.
+</p>
+
+<p>
+Download (130MB, all frameworks included):<br/>
+http://cybertron.cg.tu-berlin.de/dalind/tco/origami.zip
+</p>
+
+<p>
+<strong>Schematics</strong><br/>
+We designed a board that takes 1 line of AC as input and splits it in 8 for addressing the individual parts of an object. Each board is controlled with a shift register, connected to an Arduino. The boards can be changed for supporting more than 8 parts or multiple objects. Do not use this unless you know what you’re doing!!! The circuit should probably be re-designed for safety.
+</p>
+Eagle (50KB):<br/>
+http://cybertron.cg.tu-berlin.de/dalind/tco/patches-ac-export.zip
+</p>
+
+<p>
+PDF:<br/>
+http://cybertron.cg.tu-berlin.de/dalind/tco/patches-ac.pdf
+</p>
+
+<p>
+<strong>Examples</strong><br/>
+The examples were constructed with our software and post-processed in Adobe Illustrator. They contain the outlines and routing for laser cutting the transparency-controlled physical interfaces shown in the paper. The routing should only cut 1 layer of ITO from the switchable diffuser, while the outlines cuts through all layers. Our settings for laser cutting are 100% speed / 12% power for cutting the outline and 100% speed / 5% power for the routing (Epilog Zing 24).
+</p>
+
+<p>
+Adobe Illustrator (2MB):<br/>
+http://cybertron.cg.tu-berlin.de/dalind/tco/examples.zip
+</p>

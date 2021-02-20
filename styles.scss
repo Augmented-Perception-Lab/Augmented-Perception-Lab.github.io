@@ -11,6 +11,7 @@ input,
 select,
 textarea {
   font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto Slab', serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,6 +21,7 @@ textarea {
   select,
   textarea {
     font-family: "Roboto", sans-serif;
+  // font-family: 'Roboto Slab', serif;
   }
 }
 
@@ -37,7 +39,7 @@ body {
 }
 
 :root {
-  --cmu-red: #b00;
+  --cmu-red: rgb(255, 153, 0);
   --cmu-gray: #e0e0e0;
   --cmu-dark-gray: #666;
 
@@ -52,6 +54,24 @@ body {
   --text-color: #000;
 
 }
+
+.f2,
+.f3,
+.nowrap
+.cta
+.link {
+  font-family: 'Roboto Slab', serif;
+  color: black;
+}
+
+.underline-dot{
+  border-bottom: 1px dotted #333333;
+}
+
+.underline-dot-white{
+  border-bottom: 1px dotted #ffffff;
+}
+
 
 .ap-lab-black {
   color: black;
@@ -92,11 +112,11 @@ h6 {
 }
 
 .cta {
-  color: var(--cmu-dark-gray);
+  // color: var(--cmu-dark-gray);
 
   @extend .ttu, .no-underline, .b;
 
-  font-size: 0.9em;
+  // font-size: 0.9em;
   margin-right: 0.15em;
 
   &:after {
@@ -165,16 +185,28 @@ body {
   margin-bottom: -.3rem;
 }
 
+.thumb-video{
+  border-width: 0;
+  border-style: none;
+}
+
+.min-width-front
+{
+  min-width: 10rem;
+}
+
 .preview-image {
-  width: 10rem;
-  height: 7rem;
+  width: 25em;
+  height: 15rem;
   background-size: cover;
   background-position: top left;
   transition: background 1.5s;
+  border-width: 0;
+  border-style: none;
 
-  &:hover {
-    background-position: bottom right;
-  }
+  // &:hover {
+  //   background-position: bottom right;
+  // }
 }
 
 i.fa.fa-external-link
@@ -206,4 +238,15 @@ footer {
 /*Hide info of no checked inputs*/
 .accordion__item input:not(:checked) ~ .accordion__content {
   display: none;
+}
+
+// From https://www.tutorialspoint.com/How-do-I-wrap-text-in-a-pre-tag-in-HTML
+// Wrap text for bibtex entries 
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }

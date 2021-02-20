@@ -1,0 +1,53 @@
+---
+layout: publication
+year: 2017
+month: 10
+selected: false
+link: https://dl.acm.org/doi/10.1145/3126594.3126621
+pdf: https://dl.acm.org/doi/10.1145/3126594.3126621
+title: "HeatSpace: Automatic Placement of Displays by Empirical Analysis of User Behavior"
+authors:
+  - Andreas Fender
+  - David Lindlbauer
+  - Philipp Herholz
+  - Marc Alexa
+  - Jörg Müller
+# blog: https://www.microsoft.com/en-us/research/blog/manipulating-space-time-mixed-reality/
+doi: 10.1145/3126594.3126621
+venue_location: Quebec City, Canada
+venue_url: https://uist.acm.org/uist2017/
+venue_tags:
+  - UIST
+type:
+  - Conference
+tags:
+  - Science
+  - Mixed Reality
+  - Perception
+venue: UIST
+
+video-thumb: 9IQFY_fNz_w
+video-30sec: 9IQFY_fNz_w
+video-suppl: pSZHUseWtj4
+# video-talk-5min: ...
+video-talk-15min: A-1S7OexOQA
+
+bibtex: "@inproceedings{Fender2017, \n
+author = {Fender, Andreas and Lindlbauer, David and Herholz, Philipp and Alexa, Marc and M\"{u}ller, J\"{o}rg}, \n
+title = {HeatSpace: Automatic Placement of Displays by Empirical Analysis of User Behavior}, \n
+year = {2017}, \n
+isbn = {9781450349819}, \n
+publisher = {Association for Computing Machinery}, \n
+address = {New York, NY, USA}, \n
+url = {https://doi.org/10.1145/3126594.3126621}, \n
+doi = {10.1145/3126594.3126621}, \n
+booktitle = {Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology}, \n
+pages = {611–621}, \n
+numpages = {11}, \n
+keywords = {multi-display environments, display placement, analyzing user behavior}, \n
+location = {Quebec City, QC, Canada}, \n
+series = {UIST '17} \n
+}"
+---
+
+We present HeatSpace, a system that records and empirically analyzes user behavior in a space and automatically suggests positions and sizes for new displays. The system uses depth cameras to capture 3D geometry and users' perspectives over time. To derive possible display placements, it calculates volumetric heatmaps describing geometric persistence and planarity of structures inside the space. It evaluates visibility of display poses by calculating a volumetric heatmap describing occlusions, position within users' field of view, and viewing angle. Optimal display size is calculated through a heatmap of average viewing distance. Based on the heatmaps and user constraints we sample the space of valid display placements and jointly optimize their positions. This can be useful when installing displays in multi-display environments such as meeting rooms, offices, and train stations.

@@ -3,19 +3,26 @@ layout: default
 ---
 
 <section>
-  <div class="pv4 bg-near-white">
-    <div class="w-100 mw8 ph4-l ph3 pv4-l pv3 center">
+  <div class="pv4 bg-white">
+    <div class="w-100 mw8 ph4-l ph3 pv2-l pv3 center">
       <h1 class="f2 lh-title measure mt3">
         {{ page.title }}
       </h1>
 
       {% if page.description %}
-        <p class="lh-copy mt3 f4">
+        <p class="lh-copy mt1 f4">
           {{ page.description | markdownify | remove: '<p>' | remove: '</p>' }}
         </p>
       {% endif %}
 
-      <div class="flex flex-row flex-wrap items-start mt1">
+      <div class="mb2">
+        {% for author in page.authors %}
+          {% include person name=author %}{% unless forloop.last %},{% endunless %}{% endfor %}.
+        <!-- {% for author in pub.authors %}
+          {% include person name=author %}{% unless forloop.last %}, {% endunless %}{% endfor %}. -->
+        </div>
+
+      <!-- <div class="flex flex-row flex-wrap items-start mt1">
       {% for name in page.authors limit:1%} {% assign author = site.people |
       where:"name", name | first %}
         <div class="flex flex-column items-center mt3 mr4">
@@ -27,20 +34,19 @@ layout: default
           <div class="black mw4 tc">{% include person name=name %}</div>
         </div>
       {% endfor %}
-      </div>
+      </div> -->
 
       {% if page.venue %}
         <div class="mt3">
           Published at
-          {% if page.venue_url %}
-            <a href="{{ page.venue_url }}">
-          {% endif %}
-          {{ page.venue }}
-          {% if page.venue_location %}
-            in {{ page.venue_location }}
-          {% endif %}
-          {% if page.venue_url %}</a>{% endif %}
-          {{ page.year }}
+          <span class="b">
+            {% if page.venue_url %}
+              <a href="{{ page.venue_url }}" class="black underline-dot hover-cmu-red link">
+            {% endif %}
+            {{ page.venue }}
+            {{ page.year }}
+            {% if page.venue_url %}</a>{% endif %}
+          </span>
         </div>
       {% endif %}
 
@@ -56,7 +62,7 @@ layout: default
     </div>
   </div>
 
-  <div class="w-100 mw8 ph4-l ph3 center mt4">
+  <div class="w-100 mw8 ph4-l ph3 center mt1">
     {% assign filename = 'assets' | append: page.url | replace: '.html', '.png' %}
     <img src="{{ filename | relative_url }}" alt="Teaser image" class="mw-100" style="max-height: 600px">
 
@@ -80,43 +86,57 @@ layout: default
     <h2>Materials</h2>
       <ul class="list pl0">
         {% if page.pdf %}
-          <li class="mt2"><a href="{{ page.pdf }}" class="black link hover-cmu-red">
+          <li class="mt2"><a href="{{ page.pdf }}" class="black link hover-cmu-red underline-dot ">
             <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
           </a></li>
         {% endif %}
         {% if page.link %}
-          <li class="mt2"><a href="{{ page.link }}" class="black link hover-cmu-red">
+          <li class="mt2"><a href="{{ page.link }}" class="black link hover-cmu-red underline-dot ">
             <i class="fas fa-link" aria-hidden="true"></i> Project
           </a></li>
         {% endif %}
         {% if page.blog %}
-          <li class="mt2"><a href="{{ page.blog }}" class="black link hover-cmu-red">
+          <li class="mt2"><a href="{{ page.blog }}" class="black link hover-cmu-red underline-dot ">
             <i class="fas fa-newspaper" aria-hidden="true"></i> Article
           </a></li>
         {% endif %}
-        {% if page.video %}
-          <li class="mt2"><a href="{{ page.video }}" class="black link hover-cmu-red">
-            <i class="fas fa-film" aria-hidden="true"></i> Video
+        {% if page.video-30sec %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-30sec }}" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: 30sec teaser
           </a></li>
         {% endif %}
-        {% if page.recording %}
-          <li class="mt2"><a href="{{ page.recording }}" class="black link hover-cmu-red">
-            <i class="fas fa-video" aria-hidden="true"></i> Recording
+
+        {% if page.video-suppl %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-suppl }}" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: Full length video
           </a></li>
         {% endif %}
+
+        {% if page.video-talk-5min %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-talk-5min }}" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: Short presentation
+          </a></li>
+        {% endif %}
+
+        {% if page.video-talk-15min %}
+          <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-talk-15min }}" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: Long presentation
+          </a></li>
+        {% endif %}
+
         {% if page.slides %}
-          <li class="mt2"><a href="{{ page.slides }}" class="black link hover-cmu-red">
+          <li class="mt2"><a href="{{ page.slides }}" class="black link hover-cmu-red underline-dot ">
             <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
           </a></li>
         {% endif %}
 
         {% if page.arxiv %}
-          <li class="mt2"><a href="https://arxiv.org/abs/{{ page.arxiv }}" class="black link hover-cmu-red">
+          <li class="mt2"><a href="https://arxiv.org/abs/{{ page.arxiv }}" class="black link hover-cmu-red underline-dot ">
             <i class="fas fa-archive" aria-hidden="true"></i> arXiv: {{ page.arxiv }}
           </a></li>
         {% endif %}
         {% if page.osf %}
-          <li class="mt2"><a href="https://osf.io/{{ page.osf }}" class="black link hover-cmu-red">
+          <li class="mt2"><a href="https://osf.io/{{ page.osf }}" class="black link hover-cmu-red underline-dot ">
             <i class="fas fa-archive" aria-hidden="true"></i> OSF: {{ page.osf }}
           </a></li>
         {% endif %}
@@ -125,7 +145,7 @@ layout: default
 
     {% if page.bibtex != "" %}
       <h2>Bibtex</h2>
-      <div class="lh-copy">
+      <div class="f6 underline-dot">
         <pre>{{ page.bibtex}}</pre>
       </div>
     {% endif %}

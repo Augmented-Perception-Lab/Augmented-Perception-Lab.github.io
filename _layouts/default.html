@@ -5,20 +5,22 @@
     <div class="content">
       <header class="bg-white">
         <div
-          class="headermenu w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"
+          class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"
         >
-          <a href="/" class="dib f2 f3-ns fw6 link black hover-cmu-red">
-            Augmented Perception Lab
-            <picture>
-              <source  
+        <!-- <div class="headermenu w-100 mw8 ph4-l ph3 right pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"> -->
+        <!-- <div class="headermenu w-100 mw8 pa2 flex flex-column">           -->
+          <a href="/" class="dib f2 mt4 fw6 link black hover-cmu-red">
+          <!-- <a href="/" class="dib f2 mt2 fw6 link black absolute right-0 hover-cmu-red w-55 pa3 mr2"> -->
+            <!-- <picture> -->
+              <!-- <source  
                 srcset="{{ '/assets/logo-sphere-01-01-01.svg' | relative_url }}"
                 type="image/svg+xml"              
-              />
+              /> -->
               <!-- <source
                 srcset="{{ '/assets/logo-light.webp' | relative_url }}"
                 type="image/webp"
               /> -->
-              <source  
+              <!-- <source  
                 srcset="{{ '/assets/logo-sphere-03-01.png' | relative_url }}"
                 type="image/png"
               />
@@ -26,12 +28,14 @@
                 class="logo"
                 alt="A coarsely tesselated sphere colored in shades of gray."
                 class="pl2 w3"
-              />
-            </picture>
+              /> -->              
+            <!-- </picture> -->
+              Augmented Perception Lab
           </a>
-          <nav
+          <!--  --><nav
             class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns"
-          >
+            >
+            <!-- <nav class="mt2 lh-copy w-100 w-25 pa3 mr2"></nav> -->
             <div class="tc mt0-ns mt2">
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/' %}cmu-red{% endif %} "
@@ -40,13 +44,13 @@
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/team.html' %}cmu-red{% endif %} "
-                href="{{ '/team' | relative_url }}"
+                href= "{{ '/team' | relative_url }}"
                 >Team</a
               >
               <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/publications.html' %}cmu-red{% endif %} "
                 href="{{ '/publications' | relative_url }}"
-                >Research</a
+                >Publications</a
               >
               <!-- <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib {%if page.url == '/teaching.html' %}cmu-red{% endif %} "
@@ -61,6 +65,7 @@
             </div>
           </nav>
         </div>
+
       </header>
 
       <main>
@@ -72,20 +77,23 @@
       <div class="w-100 mw8 ph4-l ph3 center pv3 footerinfo">
         <ul class="list pl0">
           <li>
-            <a href="{{ '/index' | relative_url }}" class="link white dim pv1 dib">Augmented Perception Lab</a>, 
-            <a href="https://hcii.cmu.edu" class="link white dim pv1 dib">Human-Computer Interaction Institute</a>,
-            <a href="https://www.cs.cmu.edu" class="link white dim pv1 dib">School of Computer Science</a>,
-            <a href="https://www.cmu.edu" class="link white dim pv1 dib">Carnegie Mellon University</a>
+            <a href="{{ '/index' | relative_url }}" class="link white dib underline-dot-white hover-cmu-red mv1">Augmented Perception Lab</a>, 
+            <a href="https://hcii.cmu.edu" class="link white underline-dot-white hover-cmu-red mv1">Human-Computer Interaction Institute</a>,
+            <a href="https://www.cs.cmu.edu" class="link white dib underline-dot-white hover-cmu-red mv1">School of Computer Science</a>,
+            <a href="https://www.cmu.edu" class="link white dib underline-dot-white hover-cmu-red mv1">Carnegie Mellon University</a>
+            <!-- <span ></span>  -->
           </li>
           <li>
-            Newell Simon Hall,  5000 Forbes Ave, Pittsburgh, PA 15213, United States, <a href="{{ '/contact' | relative_url }}" class="link white dim underline">How to find us.</a>             
+            <span>
+            Newell Simon Hall,  5000 Forbes Ave, Pittsburgh, PA 15213, United States, <a href="{{ '/contact' | relative_url }}" class="link white dim underline-dot-white hover-cmu-red">How to find us.</a>
+            </span>
           </li>
           <li class="pv1">
             <abbr
             title="Last build on {{ site.time | date: '%Y-%m-%d' }}"
             class="white"
-            style="text-underline-position: under; list-style: height 2em;"
-            >Last update {{ site.time | date: "%B %Y" }}</abbr>              
+            style="list-style: height 2em;"
+            >Last update {{ site.time | date: "%D %B %Y" }}</abbr>              
           </li>
         </ul>
       </div>
