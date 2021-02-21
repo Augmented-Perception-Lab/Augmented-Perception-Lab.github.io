@@ -4,57 +4,6 @@ layout: default
 
 
 <section class="w-100 mw8 ph4-l ph3 center">
-
-  <!-- <div class="flex flex-row-ns flex-column pv3"> 
-
-    <div class="pr3 w-two-thirds-l w-50-m">
-      <h2 class="f2">Research</h2>
-
-      <p class="f4 measure-wide lh-copy">
-        Our group focusses on understanding how humans perceive and interact with digital information, 
-        and to build technology that goes beyond the flat displays of PCs and smartphones to advances 
-        our capabilities when interacting with the digital world. To achieve this, we create and study 
-        enabling technologies and computational approaches that control when, where and how virtual 
-        content is displayed to increase the usability of AR and VR interfaces.
-      </p>
-    </div>
-
-    <div class="pr3-ns w-thirds-l w-50-m">
-      <h2 class="f3">Updates</h2>
-
-      <ul class="list pl0">
-        {% assign sorted_posts = site.news %} {% for post in
-        sorted_posts limit:3%}
-        <li class="pb3">
-          {{ post.title }}
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <time datetime="{{ post.date }}" class="db f6 black-80"
-            >{{ post.date | date: "%b %Y" }}</time
-          >
-        </li>
-        {% endfor %}
-      </ul>
-      <a class="cta" href="/news">Show all</a>
-    </div>
-
-    <div class="pl3-ns w-third-l w-50-m">
-      <h2 class="f3">Courses</h2>
-
-      <ul class="list pl0">
-        {% assign years = site.courses | group_by: 'year' %}{% assign
-        sorted_years = years | reverse %}{% for year in sorted_years %} {%
-        assign sorted_courses = year.items | sort: 'semester' %} {% for course
-        in sorted_courses %}
-        <li class="pb3">
-          <a href="{{ course.url }}">{{ course.name }}</a>
-          <span class="db f6 black-80"
-            >{{ course.semester }} {{ course.year }}</span
-          >
-        </li>
-        {% endfor %} {% endfor %}
-      </ul>
-    </div>
-  </div> -->
   
   <div class="w-100 mt2">
       <img class="w-100" src="assets/teaser-01.jpg" alt="Teaser image">
@@ -63,7 +12,6 @@ layout: default
   <div class="w-100 mt2">
     <h2 class="f3">Research</h2>
 
-    <!-- <p class="f4 measure-wide lh-copy"> -->
     <p class="f5 lh-copy">
       Welcome to the <span class="b">Augmented Perception Lab</span> at the <a href="https://www.hcii.cmu.edu/" class="black b underline-dot hover-cmu-red link">Human-Computer Interaction Institute</a> at <a href="https://www.cmu.edu/" class="black b underline-dot hover-cmu-red link">Carnegie Mellon University</a> .
       <br/><br/>
@@ -75,77 +23,19 @@ layout: default
       content is displayed to increase the usability of <span class="b">Augmented Reality and Virtual Reality interfaces</span>.
 
       <br/><br/>
-      The Augmented Perception lab is headed by <a href="" class="black b underline-dot hover-cmu-red link">Prof. David Lindlbauer</a>.
+      The Augmented Perception lab is headed by <a href="{{ '/team' | relative_url }}"" class="black b underline-dot hover-cmu-red link">Prof. David Lindlbauer</a>.
       If you want to <a href="{{ '/team' | relative_url }}" class="black underline-dot hover-cmu-red link b" >work with us</a>, please check out our <a href="{{ '/team' | relative_url }}" class="black b underline-dot hover-cmu-red link" >Team page</a>.
 
     </p>
-    <!-- <h2 class="f3">Recent projects</h2>
-
-    <div class="flex flex-row-ns flex-wrap pt3">
-      <div class="mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
-        <h3 class="f4 mt0">Visualization</h3>
-        <p class="measure lh-copy">
-          Visualization leverages human perception to make (potentially large)
-          data accessible. We are developing new languages and tools for
-          analysis and communication.
-        </p>
-      </div>
-      <div class="mh2-ns mr0-m mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
-        <h3 class="f4 mt0">Human-Centered Data Science</h3>
-        <p class="measure lh-copy">
-          While computers can help us manage data, human judgment and domain
-          expertise is what turns it into understanding. Meeting the challenges
-          of increasingly large and complex data requires methods that richly
-          integrate the capabilities of both people and machines.
-        </p>
-      </div>
-      <div class="mh2-l mr2-ns mv2 w-20-l w-40-m flex-auto shadow-4 pa3 br2">
-        <h3 class="f4 mt0">Interpretable Machine Learning</h3>
-        <p class="measure lh-copy">
-          Machine learning allows data scientists to summarize, aggregate, and
-          make predictions about their data. But computers don't explain their
-          predictions, which limits interpretability and actionable insights. We
-          create techniques and systems that make models and their decisions
-          understandable.
-        </p>
-      </div>
-      <div class="ml2-ns mv2 w-40-l w-40-m flex-auto shadow-4 pa3 br2">
-        <h3 class="f4 mt0">Design for Machine Learning</h3>
-        <p class="measure lh-copy">
-          To create ML-based applications, we need to understand and design for
-          everyone involved in the development process—the engineers who build
-          the models, the designers who create the experiences, and the people
-          who use the products.
-        </p>  
-      </div>
-    </div> -->
   </div>
 
-  <!-- <div class="w-100 mt2">
-    <h2 class="f3">Updates</h2>
-    <a class="cta" href="/news">Show all updates.</a>
-    <ul class="list pl0">
-      {% assign sorted_posts = site.news %} {% for post in
-      sorted_posts limit:3%}
-      <li class="pb3">
-        {{ post.title }}
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <time datetime="{{ post.date }}" class="db f6 black-80"
-          >{{ post.date | date: "%b %Y" }}</time
-        >
-      </li>
-      {% endfor %}
-    </ul>
-  </div> -->
-  
   <div class="mt2">
     <h2 class="f3">Selected Publications</h2>
     <a class="cta" href="/publications">Show all publications</a>
 
     <div class="mv3">
       {% assign selected_pubs = site.publications | where: "selected", true %} 
-      <!-- {{ recent_pubs | size }} -->
-
+     
       {% assign pubyears = selected_pubs | group_by:"year" %} 
       {% assign sorted_pubyears = pubyears | reverse %}  
 
@@ -157,11 +47,6 @@ layout: default
         {% assign thumb = 'assets' | append: pub.url | replace: '.html',
         '_thumb.png' %}
         
-        <!-- <div
-          class="h3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
-          style="background-image: url('{{ thumb | relative_url }}')"
-        ></div> -->
-
         <div class="h3 mv3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
         style="background-image: url('{{ thumb | relative_url }}')">
         

@@ -1,6 +1,8 @@
-# Website for the CMU Data Interaction Group
+# Website for the Augmented Perception Lab at CMU HCII
 
-Deployed at https://dig.cmu.edu/. 
+Deployed at https://augmented-perception.org/.
+
+Based on the website of the CMU Data Interaction Group (https://dig.cmu.edu/), which is open source on Github (https://github.com/cmudig).
 
 ## Usage
 
@@ -10,10 +12,10 @@ To add specific content, follow the README guides in the corresponding directori
 
 * [Add a person](_people)
 * [Add a publication](_publications)
-* [Add a post](_posts)
+<!-- * [Add a post](_posts) -->
 
+# Useful links for the theme:
 
-Useful links for the theme:
 https://tachyons.io/#style
 https://tachyons.io/docs/layout/spacing/
 https://tachyons.io/docs/typography/line-height/
