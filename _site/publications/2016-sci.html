@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="application-name" content="CMU Augmented Perception Lab" />
+  <meta name="theme-color" content="#b00" />
+  
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="/styles.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/logo-light.png"
+    sizes="250x250"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="CMU Augmented Perception Lab"
+    href="http://localhost:4000/feed.xml"
+  />
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Combining Shape-Changing Interfaces and Spatial Augmented Reality Enables Extended Object Appearance | CMU Augmented Perception Lab</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Combining Shape-Changing Interfaces and Spatial Augmented Reality Enables Extended Object Appearance" />
+<meta name="author" content="David Lindlbauer" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="We propose combining shape-changing interfaces and spatial augmented reality for extending the space of appearances and interactions of actuated interfaces. While shape-changing interfaces can dynamically alter the physical appearance of objects, the integration of spatial augmented reality additionally allows for dynamically changing objects’ optical appearance with high detail. This way, devices can render currently challenging features such as high frequency texture or fast motion. We frame this combination in the context of computer graphics with analogies to established techniques for increasing the realism of 3D objects such as bump mapping. This extensible framework helps us identify challenges of the two techniques and benefits of their combination. We utilize our prototype shape-changing device enriched with spatial augmented reality through projection mapping to demonstrate the concept. We present a novel mechanical distance-fields algorithm for real-time fitting of mechanically constrained shape-changing devices to arbitrary 3D graphics. Furthermore, we present a technique for increasing effective screen real estate for spatial augmented reality through view-dependent shape change." />
+<meta property="og:description" content="We propose combining shape-changing interfaces and spatial augmented reality for extending the space of appearances and interactions of actuated interfaces. While shape-changing interfaces can dynamically alter the physical appearance of objects, the integration of spatial augmented reality additionally allows for dynamically changing objects’ optical appearance with high detail. This way, devices can render currently challenging features such as high frequency texture or fast motion. We frame this combination in the context of computer graphics with analogies to established techniques for increasing the realism of 3D objects such as bump mapping. This extensible framework helps us identify challenges of the two techniques and benefits of their combination. We utilize our prototype shape-changing device enriched with spatial augmented reality through projection mapping to demonstrate the concept. We present a novel mechanical distance-fields algorithm for real-time fitting of mechanically constrained shape-changing devices to arbitrary 3D graphics. Furthermore, we present a technique for increasing effective screen real estate for spatial augmented reality through view-dependent shape change." />
+<link rel="canonical" href="http://localhost:4000/publications/2016-sci.html" />
+<meta property="og:url" content="http://localhost:4000/publications/2016-sci.html" />
+<meta property="og:site_name" content="CMU Augmented Perception Lab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-02-21T09:31:41-05:00" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/publications/2016-sci.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/2016-sci.html"},"author":{"@type":"Person","name":"David Lindlbauer"},"headline":"Combining Shape-Changing Interfaces and Spatial Augmented Reality Enables Extended Object Appearance","dateModified":"2021-02-21T09:31:41-05:00","datePublished":"2021-02-21T09:31:41-05:00","description":"We propose combining shape-changing interfaces and spatial augmented reality for extending the space of appearances and interactions of actuated interfaces. While shape-changing interfaces can dynamically alter the physical appearance of objects, the integration of spatial augmented reality additionally allows for dynamically changing objects’ optical appearance with high detail. This way, devices can render currently challenging features such as high frequency texture or fast motion. We frame this combination in the context of computer graphics with analogies to established techniques for increasing the realism of 3D objects such as bump mapping. This extensible framework helps us identify challenges of the two techniques and benefits of their combination. We utilize our prototype shape-changing device enriched with spatial augmented reality through projection mapping to demonstrate the concept. We present a novel mechanical distance-fields algorithm for real-time fitting of mechanically constrained shape-changing devices to arbitrary 3D graphics. Furthermore, we present a technique for increasing effective screen real estate for spatial augmented reality through view-dependent shape change.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body>
+    <div class="content">
+      <header class="bg-white">
+        <div class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l">
+        <!-- <div class="headermenu w-100 mw8 ph4-l ph3 right pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"> -->
+        <!-- <div class="headermenu w-100 mw8 pa2 flex flex-column">           -->
+          <a href="/" class="dib f2 mt4 fw6 link black hover-cmu-red">
+          <!-- <a href="/" class="dib f2 mt2 fw6 link black absolute right-0 hover-cmu-red w-55 pa3 mr2"> -->
+            <!-- <picture> -->
+              <!-- <source  
+                srcset="/assets/logo-sphere-01-01-01.svg"
+                type="image/svg+xml"              
+              /> -->
+              <!-- <source
+                srcset="/assets/logo-light.webp"
+                type="image/webp"
+              /> -->
+              <!-- <source  
+                srcset="/assets/logo-sphere-03-01.png"
+                type="image/png"
+              />
+              <img 
+                class="logo"
+                alt="A coarsely tesselated sphere colored in shades of gray."
+                class="pl2 w3"
+              /> -->              
+            <!-- </picture> -->
+              Augmented Perception Lab
+          </a>
+          <!--  --><nav class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns">
+            <!-- <nav class="mt2 lh-copy w-100 w-25 pa3 mr2"></nav> -->
+            <div class="tc mt0-ns mt2">
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/index">Home</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/team">Team</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/publications">Publications</a>
+              <!-- <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
+                href="/teaching"
+                >Teaching</a
+              > -->
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/contact">Contact</a>
+            </div>
+          </nav>
+        </div>
+
+      </header>
+
+      <main>
+        <section>
+  <div class="pv4 bg-white">
+    <div class="w-100 mw8 ph4-l ph3 pv2-l pv3 center">
+      <h1 class="f2 lh-title measure mt3">
+        Combining Shape-Changing Interfaces and Spatial Augmented Reality Enables Extended Object Appearance
+      </h1>
+
+      
+
+      <div class="mb2">
+        
+          <a href="http://davidlindlbauer.com/" class="black underline-dot hover-cmu-red link">David Lindlbauer</a>,
+          Jens Emil Grønbæk,
+          Morten Birk,
+          Kim Halskov,
+          Marc Alexa,
+          Jörg Müller.
+        <!-- . -->
+        </div>
+
+      <!-- <div class="flex flex-row flex-wrap items-start mt1">
+       
+        <div class="flex flex-column items-center mt3 mr4">
+          <picture>
+            <source srcset="/assets/people/david.jpg"></source>
+            <source srcset="/assets/person.png"></source>
+            <img class="br-100 w3 h3 mb1" alt="Picture of David Lindlbauer" />
+          </picture>
+          <div class="black mw4 tc"><a href="http://davidlindlbauer.com/" class="black underline-dot hover-cmu-red link"
+  >David Lindlbauer</a
+></div>
+        </div>
+      
+      </div> -->
+
+      
+        <div class="mt3">
+          Published at
+          <span class="b">
+            
+              <a href="https://chi2016.acm.org/wp/" class="black underline-dot hover-cmu-red link">
+            
+            CHI
+            2016
+            </a>
+          </span>
+        </div>
+      
+
+      
+    </div>
+  </div>
+
+  <div class="w-100 mw8 ph4-l ph3 center mt1">
+    
+    <img src="/assets/publications/2016-sci.png" alt="Teaser image" class="mw-100" style="max-height: 600px">
+
+    
+
+    
+    
+      <h2>Abstract</h2>
+      <div class="lh-copy">
+        We propose combining shape-changing interfaces and spatial augmented reality for extending the space of appearances and interactions of actuated interfaces. While shape-changing interfaces can dynamically alter the physical appearance of objects, the integration of spatial augmented reality additionally allows for dynamically changing objects' optical appearance with high detail. This way, devices can render currently challenging features such as high frequency texture or fast motion. We frame this combination in the context of computer graphics with analogies to established techniques for increasing the realism of 3D objects such as bump mapping. This extensible framework helps us identify challenges of the two techniques and benefits of their combination. We utilize our prototype shape-changing device enriched with spatial augmented reality through projection mapping to demonstrate the concept. We present a novel mechanical distance-fields algorithm for real-time fitting of mechanically constrained shape-changing devices to arbitrary 3D graphics. Furthermore, we present a technique for increasing effective screen real estate for spatial augmented reality through view-dependent shape change.
+
+      </div>
+    
+
+    
+    <h2>Materials</h2>
+      <ul class="list pl0">
+        
+          <li class="mt2"><a href="https://dl.acm.org/doi/10.1145/2858036.2858457" class="black link hover-cmu-red underline-dot ">
+            <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
+          </a></li>
+        
+        
+          <li class="mt2"><a href="https://dl.acm.org/doi/10.1145/2858036.2858457" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-link" aria-hidden="true"></i> Project
+          </a></li>
+        
+        
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=uyvBJqv3s_M" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: 30sec teaser
+          </a></li>
+        
+
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=fWREdKL2Kus" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: Full length video
+          </a></li>
+        
+
+        
+
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=28_DwAVaKgE" class="black link hover-cmu-red underline-dot ">
+            <i class="fas fa-film" aria-hidden="true"></i> Video: Long presentation
+          </a></li>
+        
+
+        
+
+        
+        
+      </ul>
+    
+
+    
+      <h2>Bibtex</h2>
+      <div class="f6 underline-dot">
+        <pre>@inbook{Lindlbauer16b, 
+ author = {Lindlbauer, David and Grønbæk, Jens Emil and Birk, Morten and Halskov, Kim and Alexa, Marc and M"{u}ller, J"{o}rg}, 
+ title = {Combining Shape-Changing Interfaces and Spatial Augmented Reality Enables Extended Object Appearance}, 
+ year = {2016}, 
+ isbn = {9781450333627}, 
+ publisher = {Association for Computing Machinery}, 
+ address = {New York, NY, USA}, 
+ url = {https://doi.org/10.1145/2858036.2858457}, 
+ booktitle = {Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems}, 
+ pages = {791–802}, 
+ numpages = {12} 
+ }</pre>
+      </div>
+    
+    
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <footer class="bt white mt5 flex-shrink-0">
+      <div class="w-100 mw8 ph4-l ph3 center pv3 footerinfo">
+        <ul class="list pl0">
+          <li>
+            <a href="/index" class="link white dib underline-dot-white hover-cmu-red mv1">Augmented Perception Lab</a>, 
+            <a href="https://hcii.cmu.edu" class="link white underline-dot-white hover-cmu-red mv1">Human-Computer Interaction Institute</a>,
+            <a href="https://www.cs.cmu.edu" class="link white dib underline-dot-white hover-cmu-red mv1">School of Computer Science</a>,
+            <a href="https://www.cmu.edu" class="link white dib underline-dot-white hover-cmu-red mv1">Carnegie Mellon University</a>
+            <!-- <span ></span>  -->
+          </li>
+          <li>
+            <span>
+            Newell Simon Hall,  5000 Forbes Ave, Pittsburgh, PA 15213, United States, <a href="/contact" class="link white dim underline-dot-white hover-cmu-red">How to find us.</a>
+            </span>
+          </li>
+          <li class="pv1">
+            <abbr title="Last build on 2021-02-21" class="white" style="list-style: height 2em;">Last update 02/21/21 February 2021</abbr>              
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
