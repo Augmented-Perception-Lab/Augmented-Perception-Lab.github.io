@@ -17,5 +17,7 @@ To add specific content, follow the README guides in the corresponding directori
 # Useful links for the theme:
 
 https://tachyons.io/#style
+
 https://tachyons.io/docs/layout/spacing/
+
 https://tachyons.io/docs/typography/line-height/
