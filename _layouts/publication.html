@@ -82,62 +82,82 @@ layout: default
       </div>
     {% endif %}
 
+    <!-- width="400" height="240" class="thumb-video"  -->
+    {% if page.video-30sec %}
+    <iframe width="600" height="360" class="thumb-video mt3 mb2"
+            src="https://www.youtube.com/embed/{{ page.video-30sec}}?iv_load_policy=3&modestbranding=1&rel=0&autohide=1&playsinline=1&controls=1&showinfo=0&autoplay=0&loop=0&mute=1" 
+            frameborder="0" allowfullscreen>
+    </iframe>   
+
+    <!-- <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-30sec }}" class="black link hover-cmu-red underline-dot ">
+      Video: 30sec teaser
+    </a></li> -->
+    {% endif %}
+
     {% if page.link or page.pdf or page.video or page.blog or page.slides or page.doi %}
     <h2>Materials</h2>
       <ul class="list pl0">
         {% if page.pdf %}
           <li class="mt2"><a href="{{ page.pdf }}" class="black link hover-cmu-red underline-dot ">
-            <i class="far fa-file-pdf" aria-hidden="true"></i> PDF
+            PDF
           </a></li>
         {% endif %}
         {% if page.link %}
           <li class="mt2"><a href="{{ page.link }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-link" aria-hidden="true"></i> Project
+            Project
           </a></li>
         {% endif %}
+
         {% if page.blog %}
           <li class="mt2"><a href="{{ page.blog }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-newspaper" aria-hidden="true"></i> Article
+            Blog
           </a></li>
         {% endif %}
+
+        {% if page.code %}
+          <li class="mt2"><a href="{{ page.code }}" class="black link hover-cmu-red underline-dot ">
+            Code
+          </a></li>
+        {% endif %}
+
         {% if page.video-30sec %}
           <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-30sec }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-film" aria-hidden="true"></i> Video: 30sec teaser
+            Video: 30sec teaser
           </a></li>
         {% endif %}
 
         {% if page.video-suppl %}
           <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-suppl }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-film" aria-hidden="true"></i> Video: Full length video
+            Video: Full length video
           </a></li>
         {% endif %}
 
         {% if page.video-talk-5min %}
           <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-talk-5min }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-film" aria-hidden="true"></i> Video: Short presentation
+            Video: Short presentation
           </a></li>
         {% endif %}
 
         {% if page.video-talk-15min %}
           <li class="mt2"><a href="https://www.youtube.com/watch?v={{ page.video-talk-15min }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-film" aria-hidden="true"></i> Video: Long presentation
+            Video: Long presentation
           </a></li>
         {% endif %}
 
         {% if page.slides %}
           <li class="mt2"><a href="{{ page.slides }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-window-maximize" aria-hidden="true"></i> Slides
+            Slides
           </a></li>
         {% endif %}
 
         {% if page.arxiv %}
           <li class="mt2"><a href="https://arxiv.org/abs/{{ page.arxiv }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-archive" aria-hidden="true"></i> arXiv: {{ page.arxiv }}
+            arXiv: {{ page.arxiv }}
           </a></li>
         {% endif %}
         {% if page.osf %}
           <li class="mt2"><a href="https://osf.io/{{ page.osf }}" class="black link hover-cmu-red underline-dot ">
-            <i class="fas fa-archive" aria-hidden="true"></i> OSF: {{ page.osf }}
+            OSF: {{ page.osf }}
           </a></li>
         {% endif %}
       </ul>
