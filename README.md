@@ -14,7 +14,15 @@ To add specific content, follow the README guides in the corresponding directori
 * [Add a publication](_publications)
 <!-- * [Add a post](_posts) -->
 
-# Useful links for the theme:
+## Pushing an update
+
+1. Check out the site via github
+2. Make change and check correctness via above bundle command
+3. Push to Github
+
+The site is published automatically through a Github workflow.
+
+## Useful links for the theme:
 
 https://tachyons.io/#style
 
