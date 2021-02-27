@@ -14,6 +14,14 @@ To add specific content, follow the README guides in the corresponding directori
 * [Add a publication](_publications)
 <!-- * [Add a post](_posts) -->
 
+### Known issues
+
+#### Jekyll broken (Mac)
+- *Could not find concurrent-ruby-1.1.7 in any of the sources*
+- *listen-3.2.1 requires ruby version >= 2.2.7, ~> 2.2, which is incompatible with the current version, ruby 3.0.0p0*
+
+**Resolution**: MacOS probably broke your Jekyll installation (`jekyll --version` yields an error, ruby version no longer compatible). Try `gem install listen` and `bundle update` in the directory of the site. If this does not help, follow install steps again (https://jekyllrb.com/docs/installation/macos/).
+
 ## Pushing an update
 
 1. Check out the site via github
