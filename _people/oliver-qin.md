@@ -2,7 +2,7 @@
 name: Oliver Qin
 # website: http://davidlindlbauer.com/
 image: /assets/person.png
-role: Masters Student
+role: Undergraduate student
 # email: davidlindlbauer@cmu.edu
 # program: Program
 ---
