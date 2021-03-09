@@ -6,3 +6,4 @@ node_modules/*
 !node_modules/tachyons-sass/**/*.scss
 .DS_Store
 _site/CNAME
+_site/CNAME

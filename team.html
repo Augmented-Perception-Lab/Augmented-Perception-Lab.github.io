@@ -3,7 +3,7 @@ layout: page
 title: Team
 subtitle: Learn more about who we are.
 roles:
-  - Professor
+  - Assistant Professor
   - Administrative coordinator
   - PhD
   - Visiting PhD student
@@ -39,7 +39,7 @@ roles:
             <div class="link mv1"><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
             {% endif %}
 
-            <div class="gray mv1">({{ person.role }})</div>
+            <div class="gray mv1">{{ person.role }}</div>
             <div class="gray mv1">{{ person.program }}</div>
           </div>
         {% endunless %}
