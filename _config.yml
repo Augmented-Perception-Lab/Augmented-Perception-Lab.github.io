@@ -34,7 +34,7 @@ external_links:
   marker_html: "<span class='ico-ext'><i class='fa fa-external-link'></i></span>"
 
 # Build settings
-markdown: GFM
+markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-feed
