@@ -8,7 +8,7 @@ email: davidlindlbauer@cmu.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Augmented Perception Lab at Carnegie Mellon University in Pittsburgh.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://augmented-perception.org/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://augmented-perception.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 sass:
   style: compressed

@@ -1,6 +1,6 @@
 ---
 name: Sophie McGrady
 # website: https://augmented-perception.org/
-image: /assets/person.png
+image: /assets/people/sophie-mcgrady.jpg
 role: Research Intern
 ---
