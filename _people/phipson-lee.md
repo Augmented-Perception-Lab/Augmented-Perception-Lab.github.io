@@ -1,8 +1,6 @@
 ---
 name: Phipson Lee
-# website: http://davidlindlbauer.com/
-image: /assets/person.png
+website: https://phipson.github.io/
+image: /assets/people/phipsonlee.jpg
 role: Master's student
-# email: davidlindlbauer@cmu.edu
-# program: Program
 ---

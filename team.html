@@ -9,16 +9,17 @@ roles:
   - Visiting PhD student
   - Master's student
   - Undergraduate student
+  - Research Intern
 ---
 
 <h2 class="f3">Work with us!</h2>
 
 <p class="f5 lh-copy">
-  If you are interested in joining the group, please get in touch by sending an email to <a href="mailto:davidlindlbauer@cmu.edu" class="underline-dot black link hover-cmu-red">davidlindlbauer@cmu.edu</a>. 
-  We are always looking for new team members that bring a diverse set of skills and motivations. 
+  If you are interested in joining the group, please get in touch by sending an email to <a href="mailto:davidlindlbauer@cmu.edu" class="underline-dot black link hover-cmu-red">davidlindlbauer@cmu.edu</a>.
+  We are always looking for new team members that bring a diverse set of skills and motivations.
   <br/><br/>
-  We offer positions for independent study projects, internships, research assistants, and postdocs. 
-  If you are interested in a PhD position at HCII and in the lab, check out the <a href="https://www.hcii.cmu.edu/academics/phd-hci" class="underline-dot black link hover-cmu-red">CMU HCII PhD admissions information</a>, and reach out before applying.  
+  We offer positions for independent study projects, internships, research assistants, and postdocs.
+  If you are interested in a PhD position at HCII and in the lab, check out the <a href="https://www.hcii.cmu.edu/academics/phd-hci" class="underline-dot black link hover-cmu-red">CMU HCII PhD admissions information</a>, and reach out before applying.
 </p>
 
 <h2 class="f3">Current Members</h2>
@@ -47,16 +48,14 @@ roles:
     {% endfor %}
   {% endfor %}
 </div>
-<!-- 
+
 <h2>Alumni</h2>
 
 <ul class="list pl0">
   {% assign sorted_alumni = site.people | sort: 'alumni_since' | reverse %} {%
   for person in sorted_alumni %} {% if person.alumni_since %}
   <li>
-    <a href="{{ person.website }}" class="black">{{ person.name }}</a>, alumni
-    since {{ person.alumni_since }}
-    <span class="gray">(formerly a {{ person.role }})</span>
+    <a href="{{ person.website }}" class="black">{{ person.name }}</a><span class="gray">, {{ person.role }}</span>, {{ person.alumni_since }}
   </li>
   {% endif %} {% endfor %}
-</ul> -->
+</ul>
