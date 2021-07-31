@@ -16,7 +16,7 @@ To add specific content, follow the README guides in the corresponding directori
 
 ### Known issues
 
--If site disappears from https://augmented-perception.org, make sure that the website in Settings/Pages/Custom domain is not blank (should be https://augmented-perception.org)
+- If site disappears from https://augmented-perception.org, make sure that the website in Settings/Pages/Custom domain is not blank (should be https://augmented-perception.org)
 
 #### Jekyll broken (Mac)
 - *Could not find concurrent-ruby-1.1.7 in any of the sources*
