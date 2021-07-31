@@ -4,7 +4,7 @@ layout: default
 
 
 <section class="w-100 mw8 ph4-l ph3 center">
-  
+
   <div class="w-100 mt2">
       <img class="w-100" src="assets/teaser-01.jpg" alt="Teaser image">
   </div>
@@ -16,10 +16,10 @@ layout: default
       Welcome to the <span class="b">Augmented Perception Lab</span> at the <a href="https://www.cmu.edu/" class="black b underline-dot hover-cmu-red link">CMU</a> <a href="https://www.hcii.cmu.edu/" class="black b underline-dot hover-cmu-red link">Human-Computer Interaction Institute</a>.
       <br/><br/>
 
-      We focus on understanding how users <span class="b">perceive and interact with digital information,</span>  
-      and building technology that goes beyond the flat displays of PCs and smartphones. Our goal is to advance 
-      users' capabilities when interacting with the digital world. To achieve this, we <span class="b">create and study 
-      enabling technologies and computational approaches</span> that control when, where and how virtual 
+      We focus on understanding how users <span class="b">perceive and interact with digital information,</span>
+      and building technology that goes beyond the flat displays of PCs and smartphones. Our goal is to advance
+      users' capabilities when interacting with the digital world. To achieve this, we <span class="b">create and study
+      enabling technologies and computational approaches</span> that control when, where and how virtual
       content is displayed to increase the usability of <span class="b">Augmented Reality and Virtual Reality interfaces</span>.
 
       <br/><br/>
@@ -34,45 +34,58 @@ layout: default
     <a class="cta" href="/publications">Show all publications</a>
 
     <div class="mv3">
-      {% assign selected_pubs = site.publications | where: "selected", true %} 
-     
-      {% assign pubyears = selected_pubs | group_by:"year" %} 
-      {% assign sorted_pubyears = pubyears | reverse %}  
+      {% assign selected_pubs = site.publications | where: "selected", true %}
+
+      {% assign pubyears = selected_pubs | group_by:"year" %}
+      {% assign sorted_pubyears = pubyears | reverse %}
 
       {% for year in sorted_pubyears %}
-      {% assign sorted_months = year.items | sort : 'month' | reverse %}  
+      {% assign sorted_months = year.items | sort : 'month' | reverse %}
 
       {% for pub in sorted_months %}
       <div class="mv4-ns flex flex-row-ns flex-column">
         {% assign thumb = 'assets' | append: pub.url | replace: '.html',
         '_thumb.png' %}
-        
+
         <div class="h3 mv3 mr3-ns mb2 mb0-ns flex-shrink-0 preview-image ba b--black-05 db"
         style="background-image: url('{{ thumb | relative_url }}')">
-        
-          <iframe width="400" height="240" class="thumb-video" 
-            src="https://www.youtube.com/embed/{{ pub.video-thumb}}?iv_load_policy=3&modestbranding=1&rel=0&autohide=1&playsinline=1&controls=1&showinfo=0&autoplay=0&loop=0&mute=1" 
+
+          {% if pub.video-thumb %}
+          <iframe width="400" height="240" class="thumb-video"
+            src="https://www.youtube.com/embed/{{ pub.video-thumb}}?iv_load_policy=3&modestbranding=1&rel=0&autohide=1&playsinline=1&controls=1&showinfo=0&autoplay=0&loop=0&mute=1"
             frameborder="0" allowfullscreen>
-          </iframe>   
+          </iframe>
+          {% endif %}
         </div>
 
         <div class="measure-wide mv3 min-width-front">
 
           <div class="mb2">
           <h3 class="mt0">
-            <a href="{{ pub.url }}" class="b link black hover-cmu-red mb3"
-            >{{ pub.title }}</a></h3>
+            {% if pub.coming-soon %}
+              {{ pub.title }}
+            {% else %}
+              <a href="{{ pub.url }}" class="b link black hover-cmu-red mb3"
+              >{{ pub.title }}</a>
+            {% endif %}
+          </h3>
           </div>
 
           <div class="mb2">
             {% for author in pub.authors %}{{ author }}{%
-            unless forloop.last %}, {% endunless %}{% endfor %}.</div> 
+            unless forloop.last %}, {% endunless %}{% endfor %}.</div>
 
           <span class="b">{{ pub.venue }} {{ pub.year }}</span>
 
+          {% if pub.coming-soon %}
+          <div class="mt3">
+          <i>More infos coming soon.</i>
+          </div>
+          {% else %}
           <div class="mt3">
             <a href="{{ pub.url }}" class="cta">Show details</a>
           </div>
+          {% endif %}
 
         </div>
       </div>
@@ -83,5 +96,5 @@ layout: default
     <a class="cta" href="/publications">Show all publications</a>
 
   </div>
-  
+
 </section>
