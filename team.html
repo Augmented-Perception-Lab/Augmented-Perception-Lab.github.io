@@ -5,7 +5,7 @@ subtitle: Learn more about who we are.
 roles:
   - Assistant Professor
   - Administrative coordinator
-  - PhD
+  - PhD student
   - Visiting PhD student
   - Master's student
   - Undergraduate student
@@ -40,8 +40,13 @@ roles:
             <div class="link mv1"><a href="mailto:{{ person.email }}">{{ person.email }}</a></div>
             {% endif %}
 
+
+            {% if person.note != blank %}
+            <div class="gray mv1">{{ person.role }} ({{ person.note }})</div>
+            {% else %}
             <div class="gray mv1">{{ person.role }}</div>
-            <div class="gray mv1">{{ person.program }}</div>
+            {% endif %}
+            <!-- <div class="gray mv1"></div> -->
           </div>
         {% endunless %}
       {% endif %}
@@ -55,7 +60,11 @@ roles:
   {% assign sorted_alumni = site.people | sort: 'alumni_since' | reverse %} {%
   for person in sorted_alumni %} {% if person.alumni_since %}
   <li>
+    {% if person.note != blank %}
+    <a href="{{ person.website }}" class="black">{{ person.name }}</a><span class="gray">, {{ person.role }} ({{ person.note }})</span>, {{ person.alumni_since }}
+    {% else %}
     <a href="{{ person.website }}" class="black">{{ person.name }}</a><span class="gray">, {{ person.role }}</span>, {{ person.alumni_since }}
+    {% endif %}
   </li>
   {% endif %} {% endfor %}
 </ul>

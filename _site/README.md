@@ -16,6 +16,8 @@ To add specific content, follow the README guides in the corresponding directori
 
 ### Known issues
 
+- If site disappears from https://augmented-perception.org, make sure that the website in Settings/Pages/Custom domain is not blank (should be https://augmented-perception.org)
+
 #### Jekyll broken (Mac)
 - *Could not find concurrent-ruby-1.1.7 in any of the sources*
 - *listen-3.2.1 requires ruby version >= 2.2.7, ~> 2.2, which is incompatible with the current version, ruby 3.0.0p0*
