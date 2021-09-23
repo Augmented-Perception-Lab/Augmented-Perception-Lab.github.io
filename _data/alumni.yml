@@ -1,0 +1,50 @@
+- name: Amy Lin
+  role: Undergraduate student
+  alumni_since: 2021
+
+- name: Aaron Lee
+  role: Master's student
+  website: https://www.aaronwjlee.com/
+  alumni_since: 2021
+
+- name: Yu-Ru Tsai
+  role: Master's student
+  alumni_since: 2021
+
+- name: Yi Fei Cheng
+  website: https://scholar.google.com/citations?user=qQlNFvcAAAAJ&hl=en
+  role: Research Intern
+  alumni_since: 2021
+  note: Swarthmore College
+
+- name: Sophie McGrady
+  role: Research Intern
+  alumni_since: 2021
+
+- name: Simone Sun
+  website: https://simonexsun.com/about.html
+  role: Research Intern
+  note: Parsons School of Design
+  alumni_since: 2021
+
+- name: Oliver Qin
+  role: Undergraduate student
+  alumni_since: 2021
+
+- name: Phipson Lee
+  website: https://phipson.github.io/
+  image: /assets/people/phipsonlee.jpg
+  role: Master's student
+  alumni_since: 2021
+
+- name: Hesper Yin
+  role: Undergraduate student
+  alumni_since: 2021
+
+- name: Kristine Kim
+  role: Undergraduate student
+  alumni_since: 2021
+
+- name: Kraig Fujii
+  role: Master's student
+  alumni_since: 2021

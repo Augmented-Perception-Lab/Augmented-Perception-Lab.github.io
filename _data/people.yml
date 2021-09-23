@@ -1,0 +1,65 @@
+- name: David Lindlbauer
+  website: http://davidlindlbauer.com/
+  image: /assets/people/david.jpg
+  role: Assistant Professor
+  email: davidlindlbauer@cmu.edu
+
+- name: Rosemary Peta-Eizenhafer
+  website: https://hcii.cmu.edu/people/rosemary-peta-eizenhafer
+  image: /assets/people/rosemary-peta-eizenhafer.jpeg
+  role: Administrative coordinator
+  email: rpetaeiz@andrew.cmu.edu
+
+- name: Hyunsung Cho
+  website: http://hyunsungcho.com/
+  image: /assets/people/hyunsung-cho.jpg
+  role: PhD student
+  email: hyunsung@andrew.cmu.edu
+
+- name: Catarina Fidalgo
+  website: https://www.cmuportugal.org/students/catarina-fidalgo/
+  image: /assets/people/catarina-fidalgo.png
+  role: PhD student
+  email: cfidalgo@andrew.cmu.edu
+  note: CMU Portugal. Advised with Joaquim Jorge
+
+- name: Andong Jing
+  image: /assets/person.png
+  role: Master's student
+
+- name: Matthew Komar
+  website: https://compuginger.com/
+  image: /assets/people/matthew-komar.jpg
+  role: Undergraduate student
+
+- name: Sebastian Yang
+  website: https://sebastianyang.com/
+  image: /assets/people/sebastian-yang.jpg
+  role: Undergraduate student
+
+- name: Fanjie "Mike" Jin
+  image: /assets/people/mike-jin.png
+  role: Undergraduate student
+
+- name: Yaxuan (Karlie) Li
+  image: /assets/people/yaxuan-li.jpg
+  role: Research Intern
+  note: McGill
+
+- name: Xiang Li
+  website: https://dynasty-li.github.io
+  image: /assets/people/Xiang_Li.jpg
+  role: Research Intern
+  note: Xi'an Jiaotong-Liverpool
+
+- name: Jaewook (Jae) Lee
+  website: https://jaewook-lee.com/
+  image: /assets/people/jaelee.jpg
+  role: Research Intern
+  note: UIUC
+
+- name: Faria Huq
+  website: https://oaishi.github.io/index.html
+  image: /assets/people/faria-huq.jpg
+  role: Research Intern
+  note: Bangladesh UET
