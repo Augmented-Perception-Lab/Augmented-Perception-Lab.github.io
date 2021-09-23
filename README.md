@@ -6,15 +6,30 @@ Based on the website of the CMU Data Interaction Group (https://dig.cmu.edu/), w
 
 ## Usage
 
-Install Jekyll dependencies with `bundle`. To start this page, run `bundle exec jekyll serve --livereload`.
+Install Jekyll dependencies with `bundle`.  
+To start this page, run `bundle exec jekyll serve --livereload`.
 
 To add specific content, follow the README guides in the corresponding directories:
 
-* [Add a person](_people)
 * [Add a publication](_publications)
 <!-- * [Add a post](_posts) -->
 
-### Known issues
+#### Adding Members
+
+Create an entry in _data/people.yml. Fill it with the following content.
+
+- name: ...
+  website: ...
+  image: /assets/....jpg
+  role: PhD Student
+  program: Masters Information Science
+  note: Some comment such as school for interns
+
+We have the following roles: `Assistant Professor`, `Administrative coordinator`, `Postdoc`, `PhD Student`, `Visiting PhD student`, `Master's student`, `Undergraduate student`, and `Research Intern`. You can also add a new role in team.html.
+
+Once someone leaves the group, add `alumni_since: XXXX` to move the entry to _data/alumni.yml them as alumni.
+
+## Known issues
 
 - If site disappears from https://augmented-perception.org, make sure that the website in Settings/Pages/Custom domain is not blank (should be https://augmented-perception.org)
 
