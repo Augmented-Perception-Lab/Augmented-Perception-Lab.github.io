@@ -50,11 +50,11 @@
 <meta property="og:url" content="http://localhost:4000/publications/2021-semanticadapt.html" />
 <meta property="og:site_name" content="CMU Augmented Perception Lab" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-09-22T22:41:06-04:00" />
+<meta property="article:published_time" content="2021-10-05T22:24:00-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="SemanticAdapt: Optimization-based Adaptation of Mixed Reality Layouts Leveraging Virtual-Physical Semantic Connections" />
 <script type="application/ld+json">
-{"description":"We present an optimization-based approach that automatically adapts Mixed Reality (MR) interfaces to different physical environments. Current MR layouts, including the position and scale of virtual interface elements, need to be manually adapted by users whenever they move between environments, and whenever they switch tasks. This process is tedious and time consuming, and arguably needs to be automated by MR systems for them to be beneficial for end users. We contribute an approach that formulates this challenges as combinatorial optimization problem and automatically decides the placement of virtual interface elements in new environments. In contrast to prior work, we exploit the semantic association between the virtual interface elements and physical objects in an environment. Our optimization furthermore considers the utility of elements for users’ current task, layout factors, and spatio-temporal consistency to previous environments. All those factors are combined in a single linear program, which is used to adapt the layout of MR interfaces in real time. We demonstrate a set of application scenarios, showcasing the versatility and applicability of our approach. Finally, we show that compared to a naive adaptive baseline approach that does not take semantic association into account, our approach decreased the number of manual interface adaptations by 37%.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/2021-semanticadapt.html"},"url":"http://localhost:4000/publications/2021-semanticadapt.html","author":{"@type":"Person","name":"Yi Fei Cheng"},"headline":"SemanticAdapt: Optimization-based Adaptation of Mixed Reality Layouts Leveraging Virtual-Physical Semantic Connections","dateModified":"2021-09-22T22:41:06-04:00","datePublished":"2021-09-22T22:41:06-04:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"description":"We present an optimization-based approach that automatically adapts Mixed Reality (MR) interfaces to different physical environments. Current MR layouts, including the position and scale of virtual interface elements, need to be manually adapted by users whenever they move between environments, and whenever they switch tasks. This process is tedious and time consuming, and arguably needs to be automated by MR systems for them to be beneficial for end users. We contribute an approach that formulates this challenges as combinatorial optimization problem and automatically decides the placement of virtual interface elements in new environments. In contrast to prior work, we exploit the semantic association between the virtual interface elements and physical objects in an environment. Our optimization furthermore considers the utility of elements for users’ current task, layout factors, and spatio-temporal consistency to previous environments. All those factors are combined in a single linear program, which is used to adapt the layout of MR interfaces in real time. We demonstrate a set of application scenarios, showcasing the versatility and applicability of our approach. Finally, we show that compared to a naive adaptive baseline approach that does not take semantic association into account, our approach decreased the number of manual interface adaptations by 37%.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/2021-semanticadapt.html"},"url":"http://localhost:4000/publications/2021-semanticadapt.html","author":{"@type":"Person","name":"Yi Fei Cheng"},"headline":"SemanticAdapt: Optimization-based Adaptation of Mixed Reality Layouts Leveraging Virtual-Physical Semantic Connections","dateModified":"2021-10-05T22:24:00-04:00","datePublished":"2021-10-05T22:24:00-04:00","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -62,9 +62,7 @@
   <body>
     <div class="content">
       <header class="bg-white">
-        <div
-          class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"
-        >
+        <div class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l">
         <!-- <div class="headermenu w-100 mw8 ph4-l ph3 right pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"> -->
         <!-- <div class="headermenu w-100 mw8 pa2 flex flex-column">           -->
           <a href="/" class="dib f2 mt4 fw6 link black hover-cmu-red">
@@ -90,36 +88,18 @@
             <!-- </picture> -->
               Augmented Perception Lab
           </a>
-          <!--  --><nav
-            class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns"
-            >
+          <!--  --><nav class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns">
             <!-- <nav class="mt2 lh-copy w-100 w-25 pa3 mr2"></nav> -->
             <div class="tc mt0-ns mt2">
-              <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
-                href="/index"
-                >Home</a
-              >
-              <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
-                href= "/team"
-                >Team</a
-              >
-              <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
-                href="/publications"
-                >Publications</a
-              >
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/index">Home</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/team">Team</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/publications">Publications</a>
               <!-- <a
                 class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
                 href="/teaching"
                 >Teaching</a
               > -->
-              <a
-                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
-                href="/contact"
-                >Contact</a
-              >
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/contact">Contact</a>
             </div>
           </nav>
         </div>
@@ -189,18 +169,80 @@
       <div class="lh-copy">
         We present an optimization-based approach that automatically adapts Mixed Reality (MR) interfaces to different physical environments. Current MR layouts, including the position and scale of virtual interface elements, need to be manually adapted by users whenever they move between environments, and whenever they switch tasks. This process is tedious and time consuming, and arguably needs to be automated by MR systems for them to be beneficial for end users. We contribute an approach that formulates this challenges as combinatorial optimization problem and automatically decides the placement of virtual interface elements in new environments. In contrast to prior work, we exploit the semantic association between the virtual interface elements and physical objects in an environment. Our optimization furthermore considers the utility of elements for users' current task, layout factors, and spatio-temporal consistency to previous environments. All those factors are combined in a single linear program, which is used to adapt the layout of MR interfaces in real time. We demonstrate a set of application scenarios, showcasing the versatility and applicability of our approach. Finally, we show that compared to a naive adaptive baseline approach that does not take semantic association into account, our approach decreased the number of manual interface adaptations by 37%.
 
+<h3>More information</h3>
+<p>
+<strong>Source code</strong> available at <a href="https://github.com/ycheng14799/SemanticAdapt"> https://github.com/ycheng14799/SemanticAdapt</a>
+</p>
+
       </div>
     
 
     <!-- width="400" height="240" class="thumb-video"  -->
     
+    <iframe width="600" height="360" class="thumb-video mt3 mb2" src="https://www.youtube.com/embed/ZR5MFh2jKIU?iv_load_policy=3&amp;modestbranding=1&amp;rel=0&amp;autohide=1&amp;playsinline=1&amp;controls=1&amp;showinfo=0&amp;autoplay=0&amp;loop=0&amp;mute=1" frameborder="0" allowfullscreen>
+    </iframe>   
 
+    <!-- <li class="mt2"><a href="https://www.youtube.com/watch?v=ZR5MFh2jKIU" class="black link hover-cmu-red underline-dot ">
+      Video: 30sec teaser
+    </a></li> -->
+    
+
+    
+    <h2>Materials</h2>
+      <ul class="list pl0">
+        
+          <li class="mt2"><a href="https://www.dropbox.com/s/55ptwls3rm6hbzp/2021uist-semanticadapt.pdf?dl=0" class="black link hover-cmu-red underline-dot ">
+            PDF
+          </a></li>
+        
+
+        
+
+        
+
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=ZR5MFh2jKIU" class="black link hover-cmu-red underline-dot ">
+            Video: 30sec teaser
+          </a></li>
+        
+
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=VIqI5TWiVpw" class="black link hover-cmu-red underline-dot ">
+            Video: Full length video
+          </a></li>
+        
+
+        
+
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=V7Qi6Mdsxak" class="black link hover-cmu-red underline-dot ">
+            Video: Long presentation
+          </a></li>
+        
+
+        
+
+        
+        
+      </ul>
     
 
     
       <h2>Bibtex</h2>
       <div class="f6 underline-dot">
-        <pre></pre>
+        <pre>@inproceedings { Cheng2021, 
+ author = {Cheng, Yi Fei and Yan, Yukang and Yi, Xin and Shi, Yuanchun, and Lindlbauer, David}, 
+ title = {SemanticAdapt: Optimization-based Adaptation of Mixed Reality Layouts Leveraging Virtual-Physical Semantic Connections}, 
+ year = {2021}, 
+ isbn = {9781450375146}, 
+ publisher = {Association for Computing Machinery}, 
+ address = {New York, NY, USA}, 
+ url = {https://doi.org/10.1145/3472749.3474750}, 
+ doi = {10.1145/3472749.3474750}, 
+ keywords = {: Mixed Reality, Computational interaction, Adaptive user interfaces}, 
+ location = {Virtual Event, USA}, 
+ series = {UIST '2021} 
+ }</pre>
       </div>
     
     
@@ -226,11 +268,7 @@
             </span>
           </li>
           <li class="pv1">
-            <abbr
-            title="Last build on 2021-09-22"
-            class="white"
-            style="list-style: height 2em; text-decoration: none;"
-            >Last update September 2021</abbr>              
+            <abbr title="Last build on 2021-10-05" class="white" style="list-style: height 2em; text-decoration: none;">Last update October 2021</abbr>              
           </li>
         </ul>
       </div>
