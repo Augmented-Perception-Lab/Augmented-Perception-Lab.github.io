@@ -18,7 +18,7 @@
 
 - name: Catarina Fidalgo
   website: https://www.cmuportugal.org/students/catarina-fidalgo/
-  image: /assets/people/catarina-fidalgo.png
+  image: /assets/people/catarina-fidalgo.jpg
   role: PhD student
   email: cfidalgo@andrew.cmu.edu
   note: CMU Portugal. Advised with Joaquim Jorge
@@ -42,6 +42,7 @@
   role: Undergraduate student
 
 - name: Yaxuan (Karlie) Li
+  website: https://yaxuanli123.wixsite.com/kkkk
   image: /assets/people/yaxuan-li.jpg
   role: Research Intern
   note: McGill
@@ -63,3 +64,37 @@
   image: /assets/people/faria-huq.jpg
   role: Research Intern
   note: Bangladesh UET
+
+- name: Jocylen Tseng
+  website: https://www.linkedin.com/in/jocelyntseng/
+  image: /assets/people/jocelyn-tseng.jpg
+  role: Undergraduate student
+
+- name: Shane Li
+  image: /assets/person.png
+  role: Master's student
+
+- name: Zishen Wen
+  image: /assets/people/zishen-wen.jpg
+  role: Master's student
+
+- name: Clare Lee
+  image: /assets/people/clare-lee.jpg
+  role: Master's student
+
+- name: Rong Kang Chew
+  image: /assets/people/rong-chew.jpg
+  role: Undergraduate student
+
+- name: Zhuoneng Wang
+  image: /assets/people/zhuoneng-wang.png
+  role: Master's student
+
+- name: Rita Dang
+  image: /assets/people/rita-dang.png
+  role: Master's student
+
+- name: Sabrina Sukhin
+  website: https://www.linkedin.com/in/sabrinasukhin/
+  image: /assets/people/sabrina-sukhin.jpg
+  role: Undergraduate student
