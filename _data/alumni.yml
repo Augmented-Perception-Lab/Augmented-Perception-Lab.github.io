@@ -48,3 +48,10 @@
 - name: Kraig Fujii
   role: Master's student
   alumni_since: 2021
+
+- name: Jaewook (Jae) Lee
+  website: https://jaewook-lee.com/
+  image: /assets/people/jaelee.jpg
+  role: Research Intern
+  note: UIUC
+  alumni_since: 2021
