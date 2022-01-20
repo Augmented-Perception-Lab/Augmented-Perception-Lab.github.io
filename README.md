@@ -6,8 +6,15 @@ Based on the website of the CMU Data Interaction Group (https://dig.cmu.edu/), w
 
 ## Usage
 
-Install Jekyll dependencies with `bundle`.  
-To start this page, run `bundle exec jekyll serve --livereload`.
+### Install Jekyll dependencies with `bundle`.  
+https://idratherbewriting.com/documentation-theme-jekyll/mydoc_install_jekyll_on_windows.html
+1. Install Ruby 2.7.5 with devkit from https://rubyinstaller.org/downloads/ (tested including installing MinGW toolchain)
+2. cmd: `gem install jekyll`
+3. cmd: `gem install bundler`
+4. Clone repository and navigate to it in cmd. Run `bundle install`
+
+### Start page
+To start this page, open cmd and navigate to website directory. Then run `bundle exec jekyll serve --livereload`.
 
 To add specific content, follow the README guides in the corresponding directories:
 
@@ -38,6 +45,21 @@ Once someone leaves the group, add `alumni_since: XXXX` to move the entry to _da
 - *listen-3.2.1 requires ruby version >= 2.2.7, ~> 2.2, which is incompatible with the current version, ruby 3.0.0p0*
 
 **Resolution**: MacOS probably broke your Jekyll installation (`jekyll --version` yields an error, ruby version no longer compatible). Try `gem install listen` and `bundle update` in the directory of the site. If this does not help, follow install steps again (https://jekyllrb.com/docs/installation/macos/).
+
+#### Load error Windows
+*C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/eventmachine-1.2.7-x64-mingw32/lib/rubyeventmachine.rb:2:in `require': cannot load such file -- 2.7/rubyeventmachine (LoadError)*
+
+**Resolution** (https://stackoverflow.com/a/53080143): 
+- Go to this folder C:\Ruby24-x64\lib\ruby\gems\2.4.0\gems\eventmachine-1.2.5-x64-mingw32\lib
+- open this file eventmachine.rb
+- write this `require 'em/pure_ruby'` in the first line of code in the file
+
+#### Live reload on Windows broken
+- *pure_ruby.rb:595:in `select': An operation was attempted on something that is not a socket. (Errno::ENOTSOCK)*
+- *pure_ruby.rb:559:in `close': Bad file descriptor (Errno::EBADF)*
+
+**Resolution**
+- Use command 'bundle exec jekyll serve --force-polling' instead of 'bundle exec jekyll serve --livereload'
 
 ## Pushing an update
 
