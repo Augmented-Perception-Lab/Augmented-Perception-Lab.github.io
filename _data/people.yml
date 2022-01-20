@@ -17,28 +17,15 @@
   email: hyunsung@andrew.cmu.edu
 
 - name: Catarina Fidalgo
-  website: https://www.cmuportugal.org/students/catarina-fidalgo/
+  website: https://catarinafidalgo.github.io/
   image: /assets/people/catarina-fidalgo.jpg
   role: PhD student
   email: cfidalgo@andrew.cmu.edu
   note: CMU Portugal. Advised with Joaquim Jorge
 
-- name: Andong Jing
-  image: /assets/person.png
-  role: Master's student
-
 - name: Matthew Komar
   website: https://compuginger.com/
   image: /assets/people/matthew-komar.jpg
-  role: Undergraduate student
-
-- name: Sebastian Yang
-  website: https://sebastianyang.com/
-  image: /assets/people/sebastian-yang.jpg
-  role: Undergraduate student
-
-- name: Fanjie "Mike" Jin
-  image: /assets/people/mike-jin.png
   role: Undergraduate student
 
 - name: Yaxuan (Karlie) Li
@@ -59,36 +46,13 @@
   role: Research Intern
   note: Bangladesh UET
 
-- name: Jocelyn Tseng
-  website: https://www.linkedin.com/in/jocelyntseng/
-  image: /assets/people/jocelyn-tseng.jpg
-  role: Undergraduate student
-
-- name: Shane Li
-  image: /assets/person.png
-  role: Master's student
-
-- name: Zishen Wen
-  image: /assets/people/zishen-wen.jpg
-  role: Master's student
-
-- name: Clare Lee
-  image: /assets/people/clare-lee.jpg
-  role: Master's student
-
 - name: Rong Kang Chew
+  website: https://www.linkedin.com/in/chewrongkang/
   image: /assets/people/rong-chew.jpg
   role: Undergraduate student
-
-- name: Zhuoneng Wang
-  image: /assets/people/zhuoneng-wang.png
-  role: Master's student
-
-- name: Rita Dang
-  image: /assets/people/rita-dang.png
-  role: Master's student
-
-- name: Sabrina Sukhin
-  website: https://www.linkedin.com/in/sabrinasukhin/
-  image: /assets/people/sabrina-sukhin.jpg
-  role: Undergraduate student
+  
+- name: Robin Wiethuechter
+  website: https://www.linkedin.com/in/robin-wiethuchter/detail/photo/
+  image: /assets/people/robin-wiethuechter.jpg
+  role: Research Intern
+  note: ETH Zurich

@@ -55,3 +55,52 @@
   role: Research Intern
   note: UIUC
   alumni_since: 2021
+
+- name: Sebastian Yang
+  website: https://sebastianyang.com/
+  image: /assets/people/sebastian-yang.jpg
+  role: Undergraduate student
+  alumni_since: 2021
+
+- name: Fanjie "Mike" Jin
+  image: /assets/people/mike-jin.png
+  role: Undergraduate student
+  alumni_since: 2021
+  
+- name: Jocelyn Tseng
+  website: https://www.linkedin.com/in/jocelyntseng/
+  image: /assets/people/jocelyn-tseng.jpg
+  role: Undergraduate student
+  alumni_since: 2021
+
+- name: Shane Li
+  image: /assets/person.png
+  role: Master's student
+  alumni_since: 2021
+
+- name: Zishen Wen
+  image: /assets/people/zishen-wen.jpg
+  role: Master's student
+  alumni_since: 2021
+
+- name: Clare Lee
+  image: /assets/people/clare-lee.jpg
+  role: Master's student
+  alumni_since: 2021
+
+- name: Zhuoneng Wang
+  image: /assets/people/zhuoneng-wang.png
+  role: Master's student
+
+- name: Rita Dang
+  image: /assets/people/rita-dang.png
+  role: Master's student
+
+- name: Sabrina Sukhin
+  website: https://www.linkedin.com/in/sabrinasukhin/
+  image: /assets/people/sabrina-sukhin.jpg
+  role: Undergraduate student
+
+- name: Andong Jing
+  image: /assets/person.png
+  role: Master's student
