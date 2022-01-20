@@ -54,6 +54,13 @@ Once someone leaves the group, add `alumni_since: XXXX` to move the entry to _da
 - open this file eventmachine.rb
 - write this `require 'em/pure_ruby'` in the first line of code in the file
 
+#### Live reload on Windows broken
+- *pure_ruby.rb:595:in `select': An operation was attempted on something that is not a socket. (Errno::ENOTSOCK)*
+- *pure_ruby.rb:559:in `close': Bad file descriptor (Errno::EBADF)*
+
+**Resolution**
+- Use command 'bundle exec jekyll serve --force-polling' instead of 'bundle exec jekyll serve --livereload'
+
 ## Pushing an update
 
 1. Check out the site via github
