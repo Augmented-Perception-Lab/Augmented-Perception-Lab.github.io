@@ -23,36 +23,19 @@
   email: cfidalgo@andrew.cmu.edu
   note: CMU Portugal. Advised with Joaquim Jorge
 
-- name: Matthew Komar
-  website: https://compuginger.com/
-  image: /assets/people/matthew-komar.jpg
-  role: Undergraduate student
-
-- name: Yaxuan (Karlie) Li
-  website: https://www.yaxuanli-hci.com/
-  image: /assets/people/yaxuan-li.jpg
-  role: Research Intern
-  note: McGill
-
-- name: Xiang Li
-  website: https://dynasty-li.github.io
-  image: /assets/people/Xiang_Li.jpg
-  role: Research Intern
-  note: Xi'an Jiaotong-Liverpool
-
-- name: Faria Huq
-  website: https://oaishi.github.io/index.html
-  image: /assets/people/faria-huq.jpg
-  role: Research Intern
-  note: Bangladesh UET
-
-- name: Rong Kang Chew
-  website: https://www.linkedin.com/in/chewrongkang/
-  image: /assets/people/rong-chew.jpg
-  role: Undergraduate student
-  
 - name: Robin Wiethuechter
   website: https://www.linkedin.com/in/robin-wiethuchter/detail/photo/
   image: /assets/people/robin-wiethuechter.jpg
   role: Research Intern
   note: ETH Zurich
+
+- name: Kiyosu Maeda
+  website: https://kiyosumaeda.github.io/
+  image: /assets/people/kiyosu-maeda.jpg
+  role: Research Intern
+  note: University of Tokyo
+
+- name: Violet Han
+  website: https://violethan.com/About
+  image: /assets/people/violet-han.jpg
+  role: Master's student

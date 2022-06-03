@@ -66,7 +66,7 @@
   image: /assets/people/mike-jin.png
   role: Undergraduate student
   alumni_since: 2021
-  
+
 - name: Jocelyn Tseng
   website: https://www.linkedin.com/in/jocelyntseng/
   image: /assets/people/jocelyn-tseng.jpg
@@ -104,3 +104,91 @@
 - name: Andong Jing
   image: /assets/person.png
   role: Master's student
+
+- name: Matthew Komar
+  website: https://compuginger.com/
+  image: /assets/people/matthew-komar.jpg
+  role: Undergraduate student
+  alumni_since: 2022
+
+- name: Yaxuan (Karlie) Li
+  website: https://www.yaxuanli-hci.com/
+  image: /assets/people/yaxuan-li.jpg
+  role: Research Intern
+  note: McGill
+  alumni_since: 2022
+
+- name: Xiang Li
+  website: https://dynasty-li.github.io
+  image: /assets/people/Xiang_Li.jpg
+  role: Research Intern
+  note: Xi'an Jiaotong-Liverpool
+  alumni_since: 2022
+
+- name: Faria Huq
+  website: https://oaishi.github.io/index.html
+  image: /assets/people/faria-huq.jpg
+  role: Research Intern
+  note: Bangladesh UET
+  alumni_since: 2022
+
+- name: Rong Kang Chew
+  website: https://www.linkedin.com/in/chewrongkang/
+  image: /assets/people/rong-chew.jpg
+  role: Undergraduate student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Angelica Bonilla
+  role: Undergraduate student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Anita Sun
+  role: Master's student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Rouan Chen
+  role: Undergraduate student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Jeremia Lo
+  role: Undergraduate student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Alexandra Slabakis
+  role: Undergraduate student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Joyce Zhang
+  role: Undergraduate student
+  note: NASA SUITS Challenge
+  alumni_since: 2022
+
+- name: Adrian Ma
+  role: Undergraduate student
+  alumni_since: 2022
+
+- name: Yihao Wang
+  role: Undergraduate student
+  alumni_since: 2022
+
+- name: Divya Kartik
+  role: Undergraduate student
+  alumni_since: 2022
+
+- name: Qianru Zhang
+  role: Undergraduate student
+  alumni_since: 2022
+
+- name: Senhao Wang
+  role: Master's student
+  alumni_since: 2022
+
+- name: Yufeng Zhao
+  role: Master's student
+  alumni_since: 2022
