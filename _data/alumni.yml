@@ -192,3 +192,10 @@
 - name: Yufeng Zhao
   role: Master's student
   alumni_since: 2022
+
+- name: Robin Wiethuechter
+  website: https://www.linkedin.com/in/robin-wiethuchter/detail/photo/
+  image: /assets/people/robin-wiethuechter.jpg
+  role: Research Intern
+  note: ETH Zurich
+  alumni_since: 2022
