@@ -49,10 +49,17 @@ Once someone leaves the group, add `alumni_since: XXXX` to move the entry to _da
 #### Load error Windows
 *C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/eventmachine-1.2.7-x64-mingw32/lib/rubyeventmachine.rb:2:in `require': cannot load such file -- 2.7/rubyeventmachine (LoadError)*
 
-**Resolution** (https://stackoverflow.com/a/53080143): 
+**Resolution (option 1)** (https://stackoverflow.com/a/53080143): 
 - Go to this folder C:\Ruby24-x64\lib\ruby\gems\2.4.0\gems\eventmachine-1.2.5-x64-mingw32\lib
 - open this file eventmachine.rb
 - write this `require 'em/pure_ruby'` in the first line of code in the file
+- restart
+
+**Resolution (option 2)** (https://stackoverflow.com/a/53080143): 
+- CMD `gem uninstall eventmachine`
+- Edit Gemfile inside your project directory and add this line inside: `gem 'eventmachine', '1.2.7', git: 'https://github.com/eventmachine/eventmachine.git', tag: 'v1.2.7'`
+- CMD `bundle install`
+- CMD `bundle exec jekyll clean`
 
 #### Live reload on Windows broken
 - *pure_ruby.rb:595:in `select': An operation was attempted on something that is not a socket. (Errno::ENOTSOCK)*
