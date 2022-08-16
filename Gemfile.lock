@@ -265,6 +265,7 @@ PLATFORMS
 DEPENDENCIES
   eventmachine (= 1.2.7)!
   github-pages (~> 208)
+  kramdown (>= 2.3.0)
   listen (~> 3.2)
   wdm (>= 0.1.0)
   webrick (~> 1.7)
