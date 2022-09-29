@@ -29,13 +29,18 @@
   role: Postdoc
   email: yukangy@andrew.cmu.edu
 
-- name: Kiyosu Maeda
-  website: https://kiyosumaeda.github.io/
-  image: /assets/people/kiyosu-maeda.jpg
-  role: Research Intern
-  note: University of Tokyo
+- name: Yi Fei Cheng
+  website: https://scholars.croucher.org.hk/scholars/cheng-yi-fei
+  image: /assets/people/yifei-cheng.jpg
+  role: PhD student
+  email: yifeic2@andrew.cmu.edu
 
 - name: Violet Han
   website: https://violethan.com/About
   image: /assets/people/violet-han.jpg
   role: Master's student
+
+- name: Yunyi (Joyce) Zhang
+  website: https://www.linkedin.com/in/yunyi-joyce-zhang/
+  image: /assets/people/joyce-zhang.jpg
+  role: Undergraduate student
