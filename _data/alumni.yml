@@ -99,12 +99,6 @@
   image: /assets/person.png
   role: Master's student
 
-- name: Matthew Komar
-  website: https://compuginger.com/
-  image: /assets/people/matthew-komar.jpg
-  role: Undergraduate student
-  alumni_since: 2022
-
 - name: Yaxuan (Karlie) Li
   website: https://www.yaxuanli-hci.com/
   image: /assets/people/yaxuan-li.jpg
