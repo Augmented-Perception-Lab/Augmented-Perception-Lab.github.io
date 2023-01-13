@@ -44,7 +44,7 @@ subtitle: We publish at premier venues in Human-Computer Interaction, such as AC
 
 
 <article>
-  {% assign pubyears = site.publications | group_by:"year" %}
+  {% assign pubyears = site.publications | where: "hidden", "false" | group_by:"year" %}
   {% assign sorted_pubyears = pubyears | reverse %}
 
   {% for year in sorted_pubyears %}
