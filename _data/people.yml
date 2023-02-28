@@ -49,7 +49,17 @@
   website: http://mattkomar.com/
   image: /assets/people/matthew-komar.jpg
   role: Undergraduate student
-  
+
+- name: Divya Kartik
+  website: https://www.linkedin.com/in/divyakartik/
+  image: /assets/people/divya-kartik.jpg
+  role: Undergraduate student
+
+- name: Emily Xie
+  website: http://emily.xie.fm/
+  image: /assets/people/emily-xie.jpg
+  role: Undergraduate student
+
 - name: Zhipeng Li
   website: https://www.zhipeng-li.com/
   image: /assets/people/zhipeng-li.jpg
