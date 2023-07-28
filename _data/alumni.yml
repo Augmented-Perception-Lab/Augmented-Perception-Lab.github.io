@@ -189,3 +189,47 @@
   role: Research Intern
   note: University of Tokyo
   alumni_since: 2022
+  
+- name: Violet Han
+  website: https://violethan.com/About
+  image: /assets/people/violet-han.jpg
+  role: Master's student
+  alumni_since: 2023
+
+- name: Yunyi (Joyce) Zhang
+  website: https://www.linkedin.com/in/yunyi-joyce-zhang/
+  image: /assets/people/joyce-zhang.jpg
+  role: Undergraduate student
+  alumni_since: 2023
+
+- name: Matthew Komar
+  website: http://mattkomar.com/
+  image: /assets/people/matthew-komar.jpg
+  role: Undergraduate student
+  alumni_since: 2023
+
+- name: Divya Kartik
+  website: https://www.linkedin.com/in/divyakartik/
+  image: /assets/people/divya-kartik.jpg
+  role: Undergraduate student
+  alumni_since: 2023
+
+- name: Emily Xie
+  website: http://emily.xie.fm/
+  image: /assets/people/emily-xie.jpg
+  role: Undergraduate student
+  alumni_since: 2023
+
+- name: Zhipeng Li
+  website: https://www.zhipeng-li.com/
+  image: /assets/people/zhipeng-li.jpg
+  role: Research Intern
+  note: Tsinghua University
+  alumni_since: 2023
+  
+- name: Karim Benharrak
+  website: https://www.hciai.uni-bayreuth.de/en/team/karim_benharrak/index.php
+  image: /assets/people/karim-benharrak.jpg
+  role: Research Intern
+  note: University of Bayreuth. Co-advised with Dominik Moritz
+  alumni_since: 2023
