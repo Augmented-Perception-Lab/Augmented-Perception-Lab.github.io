@@ -75,8 +75,12 @@ subtitle: We publish at premier venues in Human-Computer Interaction, such as AC
 
                   {% if pub.coming-soon %}
                     {{ pub.title }}
-                  {% else %}
+                  {% else %}                  
+                    {% if pub.external %}
+                    <a href="{{ pub.blog }}" class="black hover-cmu-red link">{{ pub.title }}</a>
+                    {% else %}
                     <a href="{{ pub.url }}" class="black hover-cmu-red link">{{ pub.title }}</a>
+                    {% endif %}
                   {% endif %}
               </h3>
 
@@ -123,10 +127,16 @@ subtitle: We publish at premier venues in Human-Computer Interaction, such as AC
               <div class="mt2 mb1">
                 {% if pub.coming-soon %}
                   <div class="mt3"><i>More infos coming soon.</i></div>
-                {% else %}
-                <a href="{{ pub.url }}" class="mr3 dib">
-                  <span class="cta">Show Details</span>
-                </a>
+                {% else %}                  
+                  {% if pub.external %}
+                  <a href="{{ pub.blog }}" class="mr3 dib">
+                    <span class="cta">Show Details</span>
+                  </a>
+                  {% else %}
+                  <a href="{{ pub.url }}" class="mr3 dib">
+                    <span class="cta">Show Details</span>
+                  </a>
+                  {% endif %}
                 {% endif %}
 
                 {% if pub.pdf %}
