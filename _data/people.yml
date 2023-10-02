@@ -45,9 +45,12 @@
   image: /assets/people/alex-wang.jpg
   role: Master's student
 
-- name: Talha Khan
-  website: https://www.linkedin.com/in/tk13/
-  image: /assets/people/talha-khan.jpg
-  role: Research Intern
-  note: University of Pittsburgh
-  
+- name: Divya Kartik
+  website: https://www.linkedin.com/in/divyakartik/
+  image: /assets/people/divya-kartik.jpg
+  role: Undergraduate student
+
+- name: Henrique Lee
+  website: https://henriqueflee.com/
+  image: /assets/person.png
+  role: Undergraduate student
