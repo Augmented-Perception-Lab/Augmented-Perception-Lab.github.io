@@ -160,10 +160,6 @@
   role: Master's student
   alumni_since: 2022
 
-- name: Divya Kartik
-  role: Undergraduate student
-  alumni_since: 2022
-
 - name: Qianru Zhang
   role: Master's student
   alumni_since: 2022
@@ -205,12 +201,6 @@
 - name: Matthew Komar
   website: http://mattkomar.com/
   image: /assets/people/matthew-komar.jpg
-  role: Undergraduate student
-  alumni_since: 2023
-
-- name: Divya Kartik
-  website: https://www.linkedin.com/in/divyakartik/
-  image: /assets/people/divya-kartik.jpg
   role: Undergraduate student
   alumni_since: 2023
 
