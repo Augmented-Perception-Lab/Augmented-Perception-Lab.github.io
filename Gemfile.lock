@@ -219,6 +219,8 @@ GEM
     minitest (5.16.2)
     nokogiri (1.13.10-x64-mingw32)
       racc (~> 1.4)
+    nokogiri (1.13.10-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -260,12 +262,12 @@ GEM
     unf_ext (0.0.8.2)
     unf_ext (0.0.8.2-x64-mingw32)
     unicode-display_width (1.8.0)
-    wdm (0.1.1)
     webrick (1.7.0)
     zeitwerk (2.6.0)
 
 PLATFORMS
   x64-mingw32
+  x86_64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -273,7 +275,6 @@ DEPENDENCIES
   github-pages (~> 208)
   kramdown (>= 2.3.0)
   listen (~> 3.2)
-  wdm (>= 0.1.0)
   webrick (~> 1.7)
 
 BUNDLED WITH
