@@ -230,3 +230,42 @@
   role: Research Intern
   note: University of Pittsburgh  
   alumni_since: 2023
+  
+- name: Sunniva Liu
+  website: https://www.sunnivaliu.com/
+  image: /assets/people/sunniva-liu.jpg
+  role: Undergraduate student
+  alumni_since: 2024
+
+- name: Alex Wang
+  website: https://ayw0.github.io/
+  image: /assets/people/alex-wang.jpg
+  role: Master's student
+  alumni_since: 2024
+
+- name: Henrique Lee
+  website: https://henriqueflee.com/
+  image: /assets/people/henrique-lee.jpg
+  role: Undergraduate student
+  alumni_since: 2024
+  
+- name: Jonathan Wieland
+  website: https://hci.uni-konstanz.de/members/research-assistants/jonathan-wieland/
+  image: /assets/people/jonathan-wieland.jpg
+  role: Research Intern
+  note: University of Konstanz
+  alumni_since: 2024
+    
+- name: Akihiro Kiuchi
+  website: https://www.aki7.jp/
+  image: /assets/people/akihiro-kiuchi.jpg
+  role: Research Intern
+  note: University of Tokyo
+  alumni_since: 2024
+
+- name: Yukang Yan
+  website: https://hcii.cmu.edu/people/yukang-yan
+  image: /assets/people/yukang-yan.jpg
+  role: Postdoc
+  email: yukangy@andrew.cmu.edu
+  alumni_since: 2024

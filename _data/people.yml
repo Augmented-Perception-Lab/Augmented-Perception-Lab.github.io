@@ -4,11 +4,11 @@
   role: Assistant Professor
   email: davidlindlbauer@cmu.edu
 
-- name: Rosemary Peta-Eizenhafer
-  website: https://hcii.cmu.edu/people/rosemary-peta-eizenhafer
-  image: /assets/people/rosemary-peta-eizenhafer.jpeg
+- name: Reenie Kirby
+  website: https://hcii.cmu.edu/people/reenie-kirby
+  image: /assets/people/reenie-kirby.jpg
   role: Administrative coordinator
-  email: rpetaeiz@andrew.cmu.edu
+  email: reenie@cmu.edu
 
 - name: Hyunsung Cho
   website: http://hyunsungcho.com/
@@ -23,46 +23,41 @@
   email: cfidalgo@andrew.cmu.edu
   note: CMU Portugal. Advised with Joaquim Jorge
 
-- name: Yukang Yan
-  website: https://hcii.cmu.edu/people/yukang-yan
-  image: /assets/people/yukang-yan.jpg
-  role: Postdoc
-  email: yukangy@andrew.cmu.edu
-
 - name: Yi Fei Cheng
   website: https://scholars.croucher.org.hk/scholars/cheng-yi-fei
   image: /assets/people/yifei-cheng.jpg
   role: PhD student
   email: yifeic2@andrew.cmu.edu
-
-- name: Sunniva Liu
-  website: https://www.sunnivaliu.com/
-  image: /assets/people/sunniva-liu.jpg
-  role: Undergraduate student
-
-- name: Alex Wang
-  website: https://ayw0.github.io/
-  image: /assets/people/alex-wang.jpg
+  
+- name: Muzhe Wu
+  website: https://wumuzhe.com/
+  image: /assets/people/muzhe-wu.jpg
   role: Master's student
-
+  
 - name: Divya Kartik
   website: https://www.linkedin.com/in/divyakartik/
   image: /assets/people/divya-kartik.jpg
   role: Undergraduate student
-
-- name: Henrique Lee
-  website: https://henriqueflee.com/
-  image: /assets/people/henrique-lee.jpg
-  role: Undergraduate student
   
-- name: Jonathan Wieland
-  website: https://hci.uni-konstanz.de/members/research-assistants/jonathan-wieland/
-  image: /assets/people/jonathan-wieland.jpg
+- name: Anika Bhagavatula
+  website: https://www.linkedin.com/in/anika-bhagavatula-b19b851b7/
+  image: /assets/people/Anika-Bhagavatula.jpg
+  role: Undergraduate student
+
+- name: Ruonan (Nancy) Sun
+  website: https://www.linkedin.com/in/ruonan-sun-388bb22b2/
+  image: /assets/person.png
+  role: Undergraduate student
+
+- name: Chuhan (Franklin) XU
+  website: https://www.linkedin.com/in/xu-chuhan-franklin/
+  image: /assets/person.png
+  role: Master's student
+
+- name: Soraya Basrai
+  website: https://www.linkedin.com/in/soraya-basrai/
+  image: /assets/people/soraya-basrai.jpg
   role: Research Intern
-  note: University of Konstanz
-    
-- name: Akihiro Kiuchi
-  website: https://www.aki7.jp/
-  image: /assets/people/akihiro-kiuchi.jpg
-  role: Research Intern
-  note: University of Tokyo
+  note: REU student from Tufts University
+
+  
