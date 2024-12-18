@@ -269,3 +269,18 @@
   role: Postdoc
   email: yukangy@andrew.cmu.edu
   alumni_since: 2024
+  
+- name: Divya Kartik
+  website: https://www.linkedin.com/in/divyakartik/
+  image: /assets/people/divya-kartik.jpg
+  role: Undergraduate student
+  
+- name: Anika Bhagavatula
+  website: https://www.linkedin.com/in/anika-bhagavatula-b19b851b7/
+  image: /assets/people/Anika-Bhagavatula.jpg
+  role: Undergraduate student
+
+- name: Ruonan (Nancy) Sun
+  website: https://www.linkedin.com/in/ruonan-sun-388bb22b2/
+  image: /assets/people/ruonan-sun.jpg
+  role: Undergraduate student

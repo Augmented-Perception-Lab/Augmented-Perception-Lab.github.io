@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="application-name" content="CMU Augmented Perception Lab" />
+  <meta name="theme-color" content="#b00" />
+  
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+    rel="stylesheet"
+  />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    rel="stylesheet"
+  />
+  <link href="/styles.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link
+    rel="icon"
+    type="image/png"
+    href="/assets/logo-sphere-03-01.png"
+    sizes="250x250"
+  />
+
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="CMU Augmented Perception Lab"
+    href="http://localhost:4000/feed.xml"
+  />
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>TurnAware: Motion-aware Augmented Reality Information Delivery While Walking | CMU Augmented Perception Lab</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="TurnAware: Motion-aware Augmented Reality Information Delivery While Walking" />
+<meta name="author" content="Sunniva Liu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Augmented Reality (AR) systems provide users with timely access to everyday information. Designing how AR messages are presented to the user, however, is challenging. If a visual message is presented suddenly in users’ field of view, it will be noticed easily, but might be disruptive to users. Conversely, if messages are made visible by slowly fading their opacity, for example, they might require more effort for users to notice and react, as they need to wait for the content to appear. This is particularly true for head-anchored virtual content, and when users are engaged in other tasks or walking in a physical environment. To address this challenge, we introduce a motion-aware technique that delivers AR visual information unobtrusively during walking when users rotate their head. When users make a turn, TurnAware moves the visual content into their field of view from the side at a speed proportional to their rotational velocity. We compare our method to a Fade-in and Pop-up baseline in a user study. Our results show that our method enables users to react to virtual content in a timely manner, while minimizing disruption on their walking patterns. Our technique improves current AR information delivery techniques by striking a balance between noticeability and disruptiveness." />
+<meta property="og:description" content="Augmented Reality (AR) systems provide users with timely access to everyday information. Designing how AR messages are presented to the user, however, is challenging. If a visual message is presented suddenly in users’ field of view, it will be noticed easily, but might be disruptive to users. Conversely, if messages are made visible by slowly fading their opacity, for example, they might require more effort for users to notice and react, as they need to wait for the content to appear. This is particularly true for head-anchored virtual content, and when users are engaged in other tasks or walking in a physical environment. To address this challenge, we introduce a motion-aware technique that delivers AR visual information unobtrusively during walking when users rotate their head. When users make a turn, TurnAware moves the visual content into their field of view from the side at a speed proportional to their rotational velocity. We compare our method to a Fade-in and Pop-up baseline in a user study. Our results show that our method enables users to react to virtual content in a timely manner, while minimizing disruption on their walking patterns. Our technique improves current AR information delivery techniques by striking a balance between noticeability and disruptiveness." />
+<link rel="canonical" href="http://localhost:4000/publications/2024-turnaware.html" />
+<meta property="og:url" content="http://localhost:4000/publications/2024-turnaware.html" />
+<meta property="og:site_name" content="CMU Augmented Perception Lab" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-12-18T15:18:04-05:00" />
+<script type="application/ld+json">
+{"headline":"TurnAware: Motion-aware Augmented Reality Information Delivery While Walking","dateModified":"2024-12-18T15:18:04-05:00","datePublished":"2024-12-18T15:18:04-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publications/2024-turnaware.html"},"author":{"@type":"Person","name":"Sunniva Liu"},"@type":"BlogPosting","url":"http://localhost:4000/publications/2024-turnaware.html","description":"Augmented Reality (AR) systems provide users with timely access to everyday information. Designing how AR messages are presented to the user, however, is challenging. If a visual message is presented suddenly in users’ field of view, it will be noticed easily, but might be disruptive to users. Conversely, if messages are made visible by slowly fading their opacity, for example, they might require more effort for users to notice and react, as they need to wait for the content to appear. This is particularly true for head-anchored virtual content, and when users are engaged in other tasks or walking in a physical environment. To address this challenge, we introduce a motion-aware technique that delivers AR visual information unobtrusively during walking when users rotate their head. When users make a turn, TurnAware moves the visual content into their field of view from the side at a speed proportional to their rotational velocity. We compare our method to a Fade-in and Pop-up baseline in a user study. Our results show that our method enables users to react to virtual content in a timely manner, while minimizing disruption on their walking patterns. Our technique improves current AR information delivery techniques by striking a balance between noticeability and disruptiveness.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+  <body>
+    <div class="content">
+      <header class="bg-white">
+        <div class="w-100 mw8 ph4-l ph3 center pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l">
+        <!-- <div class="headermenu w-100 mw8 ph4-l ph3 right pt2 pb4-l pb3 flex items-baseline flex flex-column flex-row-l"> -->
+        <!-- <div class="headermenu w-100 mw8 pa2 flex flex-column">           -->
+          <a href="/" class="dib f2 mt4 fw6 link black hover-cmu-red">
+          <!-- <a href="/" class="dib f2 mt2 fw6 link black absolute right-0 hover-cmu-red w-55 pa3 mr2"> -->
+            <!-- <picture> -->
+              <!-- <source  
+                srcset="/assets/logo-sphere-01-01-01.svg"
+                type="image/svg+xml"              
+              /> -->
+              <!-- <source
+                srcset="/assets/logo-sphere-03-01.webp"
+                type="image/webp"
+              /> -->
+              <!-- <source  
+                srcset="/assets/logo-sphere-03-01.png"
+                type="image/png"
+              />
+              <img 
+                class="logo"
+                alt="A coarsely tesselated sphere colored in shades of gray."
+                class="pl2 w3"
+              /> -->              
+            <!-- </picture> -->
+              Augmented Perception Lab
+          </a>
+          <!--  --><nav class="mt3 ml-auto-ns lh-copy w-auto-ns w-100 flex flex-column flex-row-ns f4 f5-ns">
+            <!-- <nav class="mt2 lh-copy w-100 w-25 pa3 mr2"></nav> -->
+            <div class="tc mt0-ns mt2">
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/index">Home</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/team">Team</a>
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/publications">Publications</a>
+              <!-- <a
+                class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  "
+                href="/teaching"
+                >Teaching</a
+              > -->
+              <a class="ml4-l ml3-m pa0-ns ph2 pv1 b black hover-cmu-red link dib  " href="/contact">Contact</a>
+            </div>
+          </nav>
+        </div>
+
+      </header>
+
+      <main>
+        <section>
+  <div class="pv4 bg-white">
+    <div class="w-100 mw8 ph4-l ph3 pv2-l pv3 center">
+      <h1 class="f2 lh-title measure mt3">
+        TurnAware: Motion-aware Augmented Reality Information Delivery While Walking
+      </h1>
+
+      
+
+      <div class="mb2">
+        
+          Sunniva Liu,
+          David Lindlbauer.
+        <!-- . -->
+        </div>
+
+      <!-- <div class="flex flex-row flex-wrap items-start mt1">
+       
+        <div class="flex flex-column items-center mt3 mr4">
+          <picture>
+            <source srcset=""></source>
+            <source srcset="/assets/person.png"></source>
+            <img class="br-100 w3 h3 mb1" alt="Picture of Sunniva Liu" />
+          </picture>
+          <div class="black mw4 tc">Sunniva Liu</div>
+        </div>
+      
+      </div> -->
+
+      
+        <div class="mt3">
+          Published at
+          <span class="b">
+            
+              <a href="https://uist.acm.org/2024/" class="black underline-dot hover-cmu-red link">
+            
+            Frontiers in Virtual Reality
+            2024
+            </a>
+          </span>
+        </div>
+      
+
+      
+    </div>
+  </div>
+
+  <div class="w-100 mw8 ph4-l ph3 center mt1">
+    
+    <img src="/assets/publications/2024-turnaware.png" alt="Teaser image" class="mw-100" style="max-height: 600px">
+
+    
+
+    
+    
+      <h2>Abstract</h2>
+      <div class="lh-copy">
+        Augmented Reality (AR) systems provide users with timely access to everyday information. Designing how AR messages are presented to the user, however, is challenging. If a visual message is presented suddenly in users’ field of view, it will be noticed easily, but might be disruptive to users. Conversely, if messages are made visible by slowly fading their opacity, for example, they might require more effort for users to notice and react, as they need to wait for the content to appear. This is particularly true for head-anchored virtual content, and when users are engaged in other tasks or walking in a physical environment. To address this challenge, we introduce a motion-aware technique that delivers AR visual information unobtrusively during walking when users rotate their head. When users make a turn, TurnAware moves the visual content into their field of view from the side at a speed proportional to their rotational velocity. We compare our method to a Fade-in and Pop-up baseline in a user study. Our results show that our method enables users to react to virtual content in a timely manner, while minimizing disruption on their walking patterns. Our technique improves current AR information delivery techniques by striking a balance between noticeability and disruptiveness.
+      </div>
+    
+
+    <!-- width="400" height="240" class="thumb-video"  -->
+    
+
+    
+    <h2>Materials</h2>
+      <ul class="list pl0">
+        
+          <li class="mt2"><a href="https://doi.org/10.3389/frvir.2024.1484280" class="black link hover-cmu-red underline-dot ">
+            PDF
+          </a></li>
+        
+
+        
+
+        
+
+        
+
+        
+          <li class="mt2"><a href="https://www.youtube.com/watch?v=sF4aQrbu-qc" class="black link hover-cmu-red underline-dot ">
+            Video: Full length video
+          </a></li>
+        
+
+        
+
+        
+
+        
+
+        
+        
+      </ul>
+    
+
+    
+      <h2>Bibtex</h2>
+      <div class="f6 underline-dot">
+        <pre>@inproceedings {Liu2024, 
+ author = {Liu, Sunniva  and Lindlbauer, David}, 
+ title = {TurnAware: motion-aware Augmented Reality information delivery while walking}, 
+ year = {2024}, 
+ volume = {5}, 
+ Journal = {Frontiers in Virtual Reality}, 
+ doi = {10.3389/frvir.2024.1484280}, 
+ ISSN={2673-4192}, 
+ URL={https://www.frontiersin.org/journals/virtual-reality/articles/10.3389/frvir.2024.1484280} 
+ }</pre>
+      </div>
+    
+    
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <footer class="bt white mt5 flex-shrink-0">
+      <div class="w-100 mw8 ph4-l ph3 center pv3 footerinfo">
+        <ul class="list pl0">
+          <li>
+            <a href="/index" class="link white dib underline-dot-white hover-cmu-red mv1">Augmented Perception Lab</a>, 
+            <a href="https://hcii.cmu.edu" class="link white underline-dot-white hover-cmu-red mv1">Human-Computer Interaction Institute</a>,
+            <a href="https://www.cs.cmu.edu" class="link white dib underline-dot-white hover-cmu-red mv1">School of Computer Science</a>,
+            <a href="https://www.cmu.edu" class="link white dib underline-dot-white hover-cmu-red mv1">Carnegie Mellon University</a>
+            <!-- <span ></span>  -->
+          </li>
+          <li>
+            <span>
+            Newell Simon Hall,  5000 Forbes Ave, Pittsburgh, PA 15213, United States, <a href="/contact" class="link white dim underline-dot-white hover-cmu-red">How to find us.</a>
+            </span>
+          </li>
+          <li class="pv1">
+            <abbr title="Last build on 2024-12-18" class="white" style="list-style: height 2em; text-decoration: none;">Last update December 2024</abbr>              
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

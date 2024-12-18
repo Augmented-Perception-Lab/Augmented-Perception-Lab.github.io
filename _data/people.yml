@@ -34,27 +34,41 @@
   image: /assets/people/muzhe-wu.jpg
   role: Master's student
   
-- name: Divya Kartik
-  website: https://www.linkedin.com/in/divyakartik/
-  image: /assets/people/divya-kartik.jpg
-  role: Undergraduate student
-  
-- name: Anika Bhagavatula
-  website: https://www.linkedin.com/in/anika-bhagavatula-b19b851b7/
-  image: /assets/people/Anika-Bhagavatula.jpg
-  role: Undergraduate student
-
-- name: Ruonan (Nancy) Sun
-  website: https://www.linkedin.com/in/ruonan-sun-388bb22b2/
-  image: /assets/people/ruonan-sun.jpg
-  role: Undergraduate student
-
 - name: Chuhan (Franklin) XU
   website: https://www.linkedin.com/in/xu-chuhan-franklin/
   image: /assets/people/franklin-xu.jpg
   role: Master's student
   
+- name: Sarah Yewon Yun
+  website: https://henriqueflee.com/
+  image: /assets/people/sarah-yun.png
+  role: Undergraduate student
+
+- name: Flora Xiao
+  website: https://www.linkedin.com/in/weierxiao/
+  image: /assets/people/flora-xiao.jpg
+  role: Master's student
+
 - name: Henrique Lee
   website: https://henriqueflee.com/
   image: /assets/people/henrique-lee.jpg
   role: Undergraduate student
+  
+- name: Ayaka Oka
+  website: https://www.linkedin.com/in/ayaka-oka/?originalSubdomain=jp
+  image: /assets/person.png
+  role: Visiting Researcher
+  note: Fujitsu
+    
+- name: Byungjoo Lee
+  website: https://esports.yonsei.ac.kr/
+  image: /assets/people/byungjoo-lee.jpeg
+  role: Visiting Researcher
+  note: Yonsei University
+  
+- name: Ari Carden
+  website: https://www.linkedin.com/in/ari-carden-129452207/
+  image: /assets/person.png
+  role: Staff
+  note: Research
+  email: acarden@andrew.cmu.edu
