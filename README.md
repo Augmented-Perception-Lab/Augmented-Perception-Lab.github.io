@@ -8,10 +8,12 @@ Based on the website of the CMU Data Interaction Group (https://dig.cmu.edu/), w
 
 ### Install Jekyll dependencies with `bundle`.  
 https://idratherbewriting.com/documentation-theme-jekyll/mydoc_install_jekyll_on_windows.html
-1. Install Ruby 2.7.5 with devkit from https://rubyinstaller.org/downloads/ (tested including installing MinGW toolchain)
+1. Install Ruby 3.0.7-1 with devkit. from https://rubyinstaller.org/downloads/ (tested including installing MinGW toolchain)
 2. cmd: `gem install jekyll`
 3. cmd: `gem install bundler`
 4. Clone repository and navigate to it in cmd. Run `bundle install`
+
+Note: Known to _not_ work with rubyinstaller-devkit-3.2.6-1 on Windows. Works with Ruby 2.7.
 
 ### Start page
 To start this page, open cmd and navigate to website directory. Then run `bundle exec jekyll serve --livereload`.
