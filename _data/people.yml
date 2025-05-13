@@ -29,19 +29,9 @@
   role: PhD student
   email: yifeic2@andrew.cmu.edu
   
-- name: Muzhe Wu
-  website: https://wumuzhe.com/
-  image: /assets/people/muzhe-wu.jpg
-  role: Master's student
-  
-- name: Chuhan (Franklin) XU
-  website: https://www.linkedin.com/in/xu-chuhan-franklin/
-  image: /assets/people/franklin-xu.jpg
-  role: Master's student
-  
 - name: Sarah Yewon Yun
-  website: https://henriqueflee.com/
-  image: /assets/people/sarah-yun.png
+  website: https://sarahyunsportfolio.squarespace.com/portfolio
+  image: /assets/people/sarah-yun.jpg
   role: Undergraduate student
 
 - name: Ruonan (Nancy) Sun
@@ -59,13 +49,7 @@
   image: /assets/people/ayaka-oka.jpg
   role: Visiting Researcher
   note: Fujitsu
-    
-- name: Byungjoo Lee
-  website: https://esports.yonsei.ac.kr/
-  image: /assets/people/byungjoo-lee.jpeg
-  role: Visiting Researcher
-  note: Yonsei University
-  
+
 - name: Ari Carden
   website: https://www.linkedin.com/in/ari-carden-129452207/
   image: /assets/people/ari-carden.jpg

@@ -274,13 +274,35 @@
   website: https://www.linkedin.com/in/divyakartik/
   image: /assets/people/divya-kartik.jpg
   role: Undergraduate student
+  alumni_since: 2025
   
 - name: Anika Bhagavatula
   website: https://www.linkedin.com/in/anika-bhagavatula-b19b851b7/
   image: /assets/people/Anika-Bhagavatula.jpg
   role: Undergraduate student
+  alumni_since: 2025
 
 - name: Flora Xiao
   website: https://www.linkedin.com/in/weierxiao/
   image: /assets/people/flora-xiao.jpg
   role: Master's student
+  alumni_since: 2025
+  
+- name: Byungjoo Lee
+  website: https://esports.yonsei.ac.kr/
+  image: /assets/people/byungjoo-lee.jpeg
+  role: Visiting Researcher
+  note: Yonsei University
+  alumni_since: 2025
+  
+- name: Muzhe Wu
+  website: https://wumuzhe.com/
+  image: /assets/people/muzhe-wu.jpg
+  role: Master's student
+  alumni_since: 2025
+  
+- name: Chuhan (Franklin) XU
+  website: https://www.linkedin.com/in/xu-chuhan-franklin/
+  image: /assets/people/franklin-xu.jpg
+  role: Master's student
+  alumni_since: 2025
