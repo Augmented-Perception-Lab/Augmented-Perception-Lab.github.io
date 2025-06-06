@@ -306,3 +306,9 @@
   image: /assets/people/franklin-xu.jpg
   role: Master's student
   alumni_since: 2025
+  
+- name: Henrique Lee
+  website: https://henriqueflee.com/
+  image: /assets/people/henrique-lee.jpg
+  role: Undergraduate student
+  alumni_since: 2025

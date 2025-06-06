@@ -38,11 +38,6 @@
   website: https://www.linkedin.com/in/ruonan-sun-388bb22b2/
   image: /assets/people/ruonan-sun.jpg
   role: Undergraduate student
-
-- name: Henrique Lee
-  website: https://henriqueflee.com/
-  image: /assets/people/henrique-lee.jpg
-  role: Undergraduate student
   
 - name: Ayaka Oka
   website: https://www.linkedin.com/in/ayaka-oka/?originalSubdomain=jp
@@ -56,3 +51,10 @@
   role: Staff
   note: Research
   email: acarden@andrew.cmu.edu
+  
+- name: Laura Schütz
+  website: https://lauraschuetz.github.io/
+  image: /assets/people/laura_schuetz.jpg
+  role: Research Intern
+  note: TU Munich
+    
