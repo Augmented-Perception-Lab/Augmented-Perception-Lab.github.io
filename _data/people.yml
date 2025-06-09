@@ -32,12 +32,33 @@
 - name: Sarah Yewon Yun
   website: https://sarahyunsportfolio.squarespace.com/portfolio
   image: /assets/people/sarah-yun.jpg
-  role: Undergraduate student
+  role: Master's student
 
 - name: Ruonan (Nancy) Sun
   website: https://www.linkedin.com/in/ruonan-sun-388bb22b2/
   image: /assets/people/ruonan-sun.jpg
   role: Undergraduate student
+  
+- name: Aashna Kulshrestha
+  website: https://www.linkedin.com/in/aashna-kulshrestha/
+  image: /assets/person.png
+  role: Undergraduate student
+    
+- name: Jose Lima
+  website: https://www.linkedin.com/in/jose-l-b4a2132a8/
+  image: /assets/people/jose-lima.jpg
+  role: Undergraduate student
+    
+- name: Jarod Bloch
+  website: https://www.linkedin.com/in/jarod-bloch-408996243/
+  image: /assets/people/jarod-bloch.jpg
+  role: Undergraduate student
+    
+- name: Cameron Jones
+  website: https://www.linkedin.com/in/cameron-jones-079286243/
+  image: /assets/people/cameron-jones.jpg
+  role: Research Intern
+  note: REU, U Michigan
   
 - name: Ayaka Oka
   website: https://www.linkedin.com/in/ayaka-oka/?originalSubdomain=jp
