@@ -28,6 +28,12 @@
   image: /assets/people/yifei-cheng.jpg
   role: PhD student
   email: yifeic2@andrew.cmu.edu
+
+- name: Alexander Wang
+  website: https://ayw0.github.io/
+  image: /assets/people/alexander-wang.jpg
+  role: PhD student
+  email: aw4@andrew.cmu.edu
   
 - name: Sarah Yewon Yun
   website: https://sarahyunsportfolio.squarespace.com/portfolio
@@ -53,12 +59,6 @@
   website: https://www.linkedin.com/in/jarod-bloch-408996243/
   image: /assets/people/jarod-bloch.jpg
   role: Undergraduate student
-    
-- name: Cameron Jones
-  website: https://www.linkedin.com/in/cameron-jones-079286243/
-  image: /assets/people/cameron-jones.jpg
-  role: Research Intern
-  note: REU, U Michigan
   
 - name: Ayaka Oka
   website: https://www.linkedin.com/in/ayaka-oka/?originalSubdomain=jp

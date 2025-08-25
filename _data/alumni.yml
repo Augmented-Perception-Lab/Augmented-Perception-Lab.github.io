@@ -312,3 +312,9 @@
   image: /assets/people/henrique-lee.jpg
   role: Undergraduate student
   alumni_since: 2025
+  
+- name: Cameron Jones
+  website: https://www.linkedin.com/in/cameron-jones-079286243/
+  image: /assets/people/cameron-jones.jpg
+  role: Research Intern
+  alumni_since: 2025
