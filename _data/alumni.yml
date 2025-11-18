@@ -318,3 +318,16 @@
   image: /assets/people/cameron-jones.jpg
   role: Research Intern
   alumni_since: 2025
+  
+- name: Ayaka Oka
+  website: https://www.linkedin.com/in/ayaka-oka/?originalSubdomain=jp
+  image: /assets/people/ayaka-oka.jpg
+  role: Visiting Researcher
+  note: Fujitsu
+  alumni_since: 2025
+
+- name: Ari Carden
+  website: https://www.linkedin.com/in/ari-carden-129452207/
+  image: /assets/people/ari-carden.jpg
+  role: Staff
+  alumni_since: 2025

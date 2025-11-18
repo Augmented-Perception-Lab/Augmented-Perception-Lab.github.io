@@ -60,19 +60,6 @@
   image: /assets/people/jarod-bloch.jpg
   role: Undergraduate student
   
-- name: Ayaka Oka
-  website: https://www.linkedin.com/in/ayaka-oka/?originalSubdomain=jp
-  image: /assets/people/ayaka-oka.jpg
-  role: Visiting Researcher
-  note: Fujitsu
-
-- name: Ari Carden
-  website: https://www.linkedin.com/in/ari-carden-129452207/
-  image: /assets/people/ari-carden.jpg
-  role: Staff
-  note: Research
-  email: acarden@andrew.cmu.edu
-  
 - name: Laura Schütz
   website: https://lauraschuetz.github.io/
   image: /assets/people/laura_schuetz.jpg
