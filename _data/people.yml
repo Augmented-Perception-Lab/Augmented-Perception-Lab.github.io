@@ -34,6 +34,13 @@
   image: /assets/people/alexander-wang.jpg
   role: PhD student
   email: aw4@andrew.cmu.edu
+
+- name: Sidhartho (Sid) Roy
+  website: https://www.linkedin.com/in/shidhartho/
+  image: /assets/people/sid-roy.jpg
+  role: PhD student
+  email: shidharr@andrew.cmu.edu 
+  note: Biomedical Engineering with Sossena Wood
   
 - name: Sarah Yewon Yun
   website: https://sarahyunsportfolio.squarespace.com/portfolio
@@ -49,20 +56,34 @@
   website: https://www.linkedin.com/in/aashna-kulshrestha/
   image: /assets/people/aashna-kulshrestha.jpg
   role: Undergraduate student
-    
-- name: Jose Lima
-  website: https://www.linkedin.com/in/jose-l-b4a2132a8/
-  image: /assets/people/jose-lima.jpg
-  role: Undergraduate student
-    
-- name: Jarod Bloch
-  website: https://www.linkedin.com/in/jarod-bloch-408996243/
-  image: /assets/people/jarod-bloch.jpg
-  role: Undergraduate student
   
-- name: Laura Schütz
-  website: https://lauraschuetz.github.io/
-  image: /assets/people/laura_schuetz.jpg
+- name: Iremsu Bas
+  website: https://iremsubas.framer.website/
+  image: /assets/people/iremsu-bas.jpg
+  role: Undergraduate student
+
+- name: Ollie Arrison
+  website: https://www.linkedin.com/in/ollie-arrison-3816861a7/
+  image: /assets/people/ollie-arrison.jpg
+  role: Undergraduate student
+   
+- name: Jeongin Park
+  website: https://zzeongb.github.io/
+  image: /assets/people/jeongin-park.jpg
   role: Research Intern
-  note: TU Munich
-    
+  note: Seoul National University
+  
+- name: Rabiat Sadiq
+  website: https://www.rabiatsadiq.com/about-me
+  image: /assets/people/rabiat-sadiq.jpg
+  role: Master's student
+  
+- name: Trey Tuscai
+  website: https://www.linkedin.com/in/trey-tuscai/
+  image: /assets/people/trey-tuscai.jpg
+  role: Master's student
+  
+- name: Memory Osuga
+  website: https://hcii.cmu.edu/people/memory-osuga
+  image: /assets/people/memory-osuga.jpg
+  role: Master's student

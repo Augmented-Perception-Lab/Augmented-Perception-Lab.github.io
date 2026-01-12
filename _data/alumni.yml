@@ -331,3 +331,23 @@
   image: /assets/people/ari-carden.jpg
   role: Staff
   alumni_since: 2025
+   
+- name: Jose Lima
+  website: https://www.linkedin.com/in/jose-l-b4a2132a8/
+  image: /assets/people/jose-lima.jpg
+  role: Undergraduate student
+  alumni_since: 2025
+    
+- name: Jarod Bloch
+  website: https://www.linkedin.com/in/jarod-bloch-408996243/
+  image: /assets/people/jarod-bloch.jpg
+  role: Undergraduate student
+  alumni_since: 2025
+  
+- name: Laura Schütz
+  website: https://lauraschuetz.github.io/
+  image: /assets/people/laura_schuetz.jpg
+  role: Research Intern
+  note: TU Munich
+  alumni_since: 2025
+    
