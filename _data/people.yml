@@ -61,17 +61,12 @@
   website: https://iremsubas.framer.website/
   image: /assets/people/iremsu-bas.jpg
   role: Undergraduate student
-
-- name: Ollie Arrison
-  website: https://www.linkedin.com/in/ollie-arrison-3816861a7/
-  image: /assets/people/ollie-arrison.jpg
-  role: Undergraduate student
-
-- name: Morgan Zhang
-  website: https://www.linkedin.com/in/morgan-a-zhang/
-  image: /assets/people/morgan-zhang.jpg
-  role: Undergraduate student
    
+- name: Arisa Okamura
+  website: https://www.linkedin.com/in/alicelavander/
+  image: /assets/people/arisa-okamura.jpg
+  role: Undergraduate student
+  
 - name: Jeongin Park
   website: https://zzeongb.github.io/
   image: /assets/people/jeongin-park.jpg
@@ -88,7 +83,8 @@
   image: /assets/people/trey-tuscai.jpg
   role: Master's student
   
-- name: Memory Osuga
-  website: https://www.linkedin.com/in/mosuga/
-  image: /assets/people/memory-osuga.jpg
-  role: Master's student
+- name: Peace Odiase
+  website: https://www.mdphd.pitt.edu/people/peace-odiase
+  image: /assets/people/peace-odiase.jpg
+  role: Research Intern
+  note: University of Pittsburgh, MD-PhD
