@@ -368,3 +368,27 @@
   image: /assets/people/memory-osuga.jpg
   role: Master's student
   alumni_since: 2026
+    
+- name: Rabiat Sadiq
+  website: https://github.com/RabiatS
+  image: /assets/people/rabiat-sadiq.jpg
+  role: Master's student
+  alumni_since: 2026
+  
+- name: Trey Tuscai
+  website: https://www.linkedin.com/in/trey-tuscai/
+  image: /assets/people/trey-tuscai.jpg
+  role: Master's student
+  alumni_since: 2026
+  
+- name: Aashna Kulshrestha
+  website: https://www.linkedin.com/in/aashna-kulshrestha/
+  image: /assets/people/aashna-kulshrestha.jpg
+  role: Undergraduate student
+  alumni_since: 2026
+  
+- name: Sarah Yewon Yun
+  website: https://sarahyunsportfolio.squarespace.com/portfolio
+  image: /assets/people/sarah-yun.jpg
+  role: Master's student
+  alumni_since: 2026

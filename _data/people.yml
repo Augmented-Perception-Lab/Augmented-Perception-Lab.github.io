@@ -34,6 +34,12 @@
   image: /assets/people/alexander-wang.jpg
   role: PhD student
   email: aw4@andrew.cmu.edu
+  
+- name: Jacqui Fashimpaur
+  website: https://www.jacquifashimpaur.com/
+  image: /assets/people/jacqui-fashimpaur.jpg
+  role: PhD student
+  email: jfashimp@andrew.cmu.edu
 
 - name: Shidhartho (Sid) Roy
   website: https://www.linkedin.com/in/shidhartho/
@@ -41,20 +47,16 @@
   role: PhD student
   email: shidharr@andrew.cmu.edu 
   note: CMU BME with Sossena Wood
-  
-- name: Sarah Yewon Yun
-  website: https://sarahyunsportfolio.squarespace.com/portfolio
-  image: /assets/people/sarah-yun.jpg
-  role: Master's student
+ 
+- name: Shwetha Rajaram
+  website: https://shwetharajaram.github.io/
+  image: /assets/people/shwetha-rajaram.jpg
+  role: Postdoc
+  email: srajaram@andrew.cmu.edu
 
 - name: Ruonan (Nancy) Sun
   website: https://www.linkedin.com/in/ruonan-sun-388bb22b2/
   image: /assets/people/ruonan-sun.jpg
-  role: Undergraduate student
-  
-- name: Aashna Kulshrestha
-  website: https://www.linkedin.com/in/aashna-kulshrestha/
-  image: /assets/people/aashna-kulshrestha.jpg
   role: Undergraduate student
   
 - name: Iremsu Bas
@@ -72,16 +74,6 @@
   image: /assets/people/jeongin-park.jpg
   role: Research Intern
   note: Seoul National University
-  
-- name: Rabiat Sadiq
-  website: https://github.com/RabiatS
-  image: /assets/people/rabiat-sadiq.jpg
-  role: Master's student
-  
-- name: Trey Tuscai
-  website: https://www.linkedin.com/in/trey-tuscai/
-  image: /assets/people/trey-tuscai.jpg
-  role: Master's student
   
 - name: Peace Odiase
   website: https://www.mdphd.pitt.edu/people/peace-odiase
