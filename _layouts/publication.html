@@ -50,6 +50,12 @@ layout: default
         </div>
       {% endif %}
 
+      {% if page.interactive %}
+        <a href="{{ page.interactive | relative_url }}" class="dib mt3 pv2 ph3 br2 bg-black white b no-underline dim">
+          Explore the interactive viewers &rarr;
+        </a>
+      {% endif %}
+
       {% if page.awards %}
         <ul class="list pl0">
           {% for award in page.awards %}
@@ -123,7 +129,7 @@ layout: default
 
         {% if page.interactive %}
           <li class="mt2"><a href="{{ page.interactive | relative_url }}" class="black link hover-cmu-red underline-dot ">
-            Interactive viewers (full page)
+            Interactive viewers
           </a></li>
         {% endif %}
 
@@ -168,17 +174,6 @@ layout: default
           </a></li>
         {% endif %}
       </ul>
-    {% endif %}
-
-    {% if page.interactive %}
-      <h2>Interactive viewers</h2>
-      <!-- A same-origin page that sizes this frame to its content (see contextxr/js/embed.js). -->
-      <style>
-        /* The viewers pad their content by 24px (16px when narrow); pull the frame out to align it. */
-        .pub-interactive { display: block; width: calc(100% + 48px); margin: 0 -24px; height: 1400px; border: 0; }
-        @media (max-width: 59.99em) { .pub-interactive { width: calc(100% + 32px); margin: 0 -16px; } }
-      </style>
-      <iframe class="pub-interactive" src="{{ page.interactive | relative_url }}" title="{{ page.title }}: interactive viewers" loading="lazy"></iframe>
     {% endif %}
 
     {% if page.bibtex != "" %}
