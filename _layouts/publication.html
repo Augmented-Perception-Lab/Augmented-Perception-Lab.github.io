@@ -50,6 +50,12 @@ layout: default
         </div>
       {% endif %}
 
+      {% if page.interactive %}
+        <a href="{{ page.interactive | relative_url }}" class="dib mt3 pv2 ph3 br2 bg-black white b no-underline dim">
+          Explore the interactive viewers &rarr;
+        </a>
+      {% endif %}
+
       {% if page.awards %}
         <ul class="list pl0">
           {% for award in page.awards %}
@@ -94,7 +100,7 @@ layout: default
     </a></li> -->
     {% endif %}
 
-    {% if page.link or page.pdf or page.video or page.blog or page.slides or page.doi %}
+    {% if page.link or page.pdf or page.code or page.data or page.video or page.blog or page.slides or page.doi %}
     <h2>Materials</h2>
       <ul class="list pl0">
         {% if page.pdf %}
@@ -112,6 +118,18 @@ layout: default
         {% if page.code %}
           <li class="mt2"><a href="{{ page.code }}" class="black link hover-cmu-red underline-dot ">
             Code
+          </a></li>
+        {% endif %}
+
+        {% if page.data %}
+          <li class="mt2"><a href="{{ page.data }}" class="black link hover-cmu-red underline-dot ">
+            Data
+          </a></li>
+        {% endif %}
+
+        {% if page.interactive %}
+          <li class="mt2"><a href="{{ page.interactive | relative_url }}" class="black link hover-cmu-red underline-dot ">
+            Interactive viewers
           </a></li>
         {% endif %}
 
